@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>霍梦林的个人博客 | vuex挂载store</title>
+    <meta name="description" content="Just playing around">
+    
+    
+    <link rel="preload" href="/assets/css/37.styles.a8404639.css" as="style"><link rel="preload" href="/assets/js/app.df01d24c.js" as="script"><link rel="preload" href="/assets/js/29.8cbe3e1c.js" as="script"><link rel="prefetch" href="/assets/js/19.e197bd03.js"><link rel="prefetch" href="/assets/js/1.721ed731.js"><link rel="prefetch" href="/assets/js/2.1b5f5b81.js"><link rel="prefetch" href="/assets/js/3.5059bdeb.js"><link rel="prefetch" href="/assets/js/4.c889c71e.js"><link rel="prefetch" href="/assets/js/5.3fa20648.js"><link rel="prefetch" href="/assets/js/6.e5f0c54e.js"><link rel="prefetch" href="/assets/js/7.02cc6397.js"><link rel="prefetch" href="/assets/js/8.660052c3.js"><link rel="prefetch" href="/assets/js/9.0d8b58b4.js"><link rel="prefetch" href="/assets/js/10.bcc3c6d3.js"><link rel="prefetch" href="/assets/js/11.e57ba32c.js"><link rel="prefetch" href="/assets/js/12.2387dd93.js"><link rel="prefetch" href="/assets/js/13.94592a34.js"><link rel="prefetch" href="/assets/js/14.5303ba2b.js"><link rel="prefetch" href="/assets/js/15.fc539b9e.js"><link rel="prefetch" href="/assets/js/16.87c0a378.js"><link rel="prefetch" href="/assets/js/17.71b70c10.js"><link rel="prefetch" href="/assets/js/18.bf7f1fbd.js"><link rel="prefetch" href="/assets/js/0.b5122d3c.js"><link rel="prefetch" href="/assets/js/20.1b5f04b4.js"><link rel="prefetch" href="/assets/js/21.63e7107e.js"><link rel="prefetch" href="/assets/js/22.672f84c2.js"><link rel="prefetch" href="/assets/js/23.2970d5c1.js"><link rel="prefetch" href="/assets/js/24.431bdd30.js"><link rel="prefetch" href="/assets/js/25.ba2c4c43.js"><link rel="prefetch" href="/assets/js/26.ded019be.js"><link rel="prefetch" href="/assets/js/27.07a469c4.js"><link rel="prefetch" href="/assets/js/28.6bee5eea.js"><link rel="prefetch" href="/assets/js/30.c4c76b06.js"><link rel="prefetch" href="/assets/js/31.f15d3cc6.js"><link rel="prefetch" href="/assets/js/32.83e4f1c8.js"><link rel="prefetch" href="/assets/js/33.f768a8c2.js"><link rel="prefetch" href="/assets/js/34.38df6817.js"><link rel="prefetch" href="/assets/js/35.35022b91.js"><link rel="prefetch" href="/assets/js/36.f0a7e00e.js">
+    <link rel="stylesheet" href="/assets/css/37.styles.a8404639.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div><a href="/" class="home-link router-link-active"><!----><span class="site-name">
+      霍梦林的个人博客
+    </span></a><div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""><!----></div><nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">Home</a></div><div class="nav-item"><a href="/about/" class="nav-link">About</a></div><div class="nav-item"><a href="/problem/" class="nav-link router-link-active">Problem</a></div><div class="nav-item"><a href="/study/" class="nav-link">Study</a></div><div class="nav-item"><a href="http://blog.csdn.net/weixin_38318244/" target="_blank" rel="noopener noreferrer" class="nav-link">CSDN</a></div><div class="nav-item"><a href="https://github.com/momo-0902" target="_blank" rel="noopener noreferrer" class="nav-link">Github</a></div><!----></nav></div></header><div class="sidebar-mask"></div><div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">Home</a></div><div class="nav-item"><a href="/about/" class="nav-link">About</a></div><div class="nav-item"><a href="/problem/" class="nav-link router-link-active">Problem</a></div><div class="nav-item"><a href="/study/" class="nav-link">Study</a></div><div class="nav-item"><a href="http://blog.csdn.net/weixin_38318244/" target="_blank" rel="noopener noreferrer" class="nav-link">CSDN</a></div><div class="nav-item"><a href="https://github.com/momo-0902" target="_blank" rel="noopener noreferrer" class="nav-link">Github</a></div><!----></nav><ul class="sidebar-links"><li><a href="/problem/" class="sidebar-link">项目中遇到的问题</a></li><li><a href="/problem/201709.html" class="sidebar-link">201709</a></li><li><a href="/problem/201710.html" class="sidebar-link">201710</a></li><li><a href="/problem/201711.html" class="sidebar-link">201711</a></li><li><a href="/problem/201712.html" class="sidebar-link">201712</a></li><li><a href="/problem/201801.html" class="sidebar-link">201801</a></li><li><a href="/problem/201803.html" class="active sidebar-link">201803</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/problem/201803.html#vuex挂载store" class="sidebar-link">vuex挂载store</a></li><li class="sidebar-sub-header"><a href="/problem/201803.html#页面上显示的vue文件都要引入到app-vue中并实例化" class="sidebar-link">页面上显示的vue文件都要引入到app.vue中并实例化</a></li><li class="sidebar-sub-header"><a href="/problem/201803.html#未知数子元素等分剩余空间不能用flex-1" class="sidebar-link">未知数子元素等分剩余空间不能用flex:1</a></li></ul></li><li><a href="/problem/201804.html" class="sidebar-link">201804</a></li></ul></div><div class="page"><div class="content"><h2 id="vuex挂载store"><a href="#vuex挂载store" aria-hidden="true" class="header-anchor">#</a> vuex挂载store</h2><pre class="language-text"><code>项目：《自学vuex》
+参照链接：&lt;https://www.cnblogs.com/ghostwu/p/7521097.html&gt;
+时间： 2018年3月23日
+问题：引用store中state的状态userName 提示错误 “cannot read property 'state' of undefined（不能读取undefined上的state属性）”
+分析：引用时使用this.$store.state.userName，此处错误表明store未定义，原因是未在创建vue实例时将store挂载上去
+关键代码:
+new Vue({
+  el: 'App',
+  router,
+  store,
+  components: { App },
+  template: '&lt;App/&gt;'
+})
+
+</code></pre><h2 id="页面上显示的vue文件都要引入到app-vue中并实例化"><a href="#页面上显示的vue文件都要引入到app-vue中并实例化" aria-hidden="true" class="header-anchor">#</a> 页面上显示的vue文件都要引入到app.vue中并实例化</h2><pre class="language-text"><code>项目：《自学vuex》
+时间： 2018年3月26日
+问题：使用vuex的mapState辅助函数帮助一个组件获取多个状态时，页面不生效
+分析：在.vue文件中添加了其他的元素页面也不显示，猜测可能是页面中没有添加成功.vue单文件组件，在App.vue中并未对mapState.vue文件做引入以及实例化
+关键代码:
+&lt;template&gt;
+  &lt;div id=&quot;app&quot;&gt;
+    &lt;Mainc&gt;&lt;/Mainc&gt;
+    &lt;testc&gt;&lt;/testc&gt;
+    &lt;mapTest&gt;&lt;/mapTest&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+import mapTest from './components/mapStateTest.vue'
+
+export default {
+  name: 'App',
+  components: [
+    Mainc,
+    testc,
+    mapTest
+  ]
+}
+&lt;/script&gt;
+</code></pre><p>##挂载vue实例到页面中</p><pre class="language-text"><code>项目：《华智数联-拟定方案》
+时间： 2018年3月29日
+问题：在新写的模态框里使用v-show命令不起作用，切换状态，绑定事件等均无反应
+分析：模态框不能隐藏，但使用display:none可以，可见是js与html出了问题，经过查看，发现js并无问题，查看html结构，发现此处我把新写的模态框放在了id=app的盒子之外,而vue实例是挂载在了此div上
+关键代码：
+new Vue ({
+  el: 'app',
+  data： {}
+})
+</code></pre><h2 id="未知数子元素等分剩余空间不能用flex-1"><a href="#未知数子元素等分剩余空间不能用flex-1" aria-hidden="true" class="header-anchor">#</a> 未知数子元素等分剩余空间不能用flex:1</h2><pre class="language-text"><code>项目：《华智数联-拟定方案》
+时间： 2018年3月28日
+问题：列表里省市都是循环出来的，但想每行只有5个，记得使用flex：1是等分空间的，但不记得5份如何定义属性
+分析：flex:1是已知子元素有几个，才可以等分剩余空间的，并没有属性能够定义未知子元素的父元素的属性，此处可将每个子元素宽度设置为20%
+</code></pre></div><!----><div class="content page-nav"><p class="inner"><span class="prev">
+        ← <a href="/problem/201801.html" class="prev">
+          201801
+        </a></span><span class="next"><a href="/problem/201804.html">
+          201804
+        </a> →
+      </span></p></div></div></div></div>
+    <script src="/assets/js/29.8cbe3e1c.js" defer></script><script src="/assets/js/app.df01d24c.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>霍梦林的个人博客 | 加密——RSA前端与后台的加密与解密</title>
+    <meta name="description" content="Just playing around">
+    
+    
+    <link rel="preload" href="/assets/css/37.styles.a8404639.css" as="style"><link rel="preload" href="/assets/js/app.df01d24c.js" as="script"><link rel="preload" href="/assets/js/24.431bdd30.js" as="script"><link rel="prefetch" href="/assets/js/19.e197bd03.js"><link rel="prefetch" href="/assets/js/1.721ed731.js"><link rel="prefetch" href="/assets/js/2.1b5f5b81.js"><link rel="prefetch" href="/assets/js/3.5059bdeb.js"><link rel="prefetch" href="/assets/js/4.c889c71e.js"><link rel="prefetch" href="/assets/js/5.3fa20648.js"><link rel="prefetch" href="/assets/js/6.e5f0c54e.js"><link rel="prefetch" href="/assets/js/7.02cc6397.js"><link rel="prefetch" href="/assets/js/8.660052c3.js"><link rel="prefetch" href="/assets/js/9.0d8b58b4.js"><link rel="prefetch" href="/assets/js/10.bcc3c6d3.js"><link rel="prefetch" href="/assets/js/11.e57ba32c.js"><link rel="prefetch" href="/assets/js/12.2387dd93.js"><link rel="prefetch" href="/assets/js/13.94592a34.js"><link rel="prefetch" href="/assets/js/14.5303ba2b.js"><link rel="prefetch" href="/assets/js/15.fc539b9e.js"><link rel="prefetch" href="/assets/js/16.87c0a378.js"><link rel="prefetch" href="/assets/js/17.71b70c10.js"><link rel="prefetch" href="/assets/js/18.bf7f1fbd.js"><link rel="prefetch" href="/assets/js/0.b5122d3c.js"><link rel="prefetch" href="/assets/js/20.1b5f04b4.js"><link rel="prefetch" href="/assets/js/21.63e7107e.js"><link rel="prefetch" href="/assets/js/22.672f84c2.js"><link rel="prefetch" href="/assets/js/23.2970d5c1.js"><link rel="prefetch" href="/assets/js/25.ba2c4c43.js"><link rel="prefetch" href="/assets/js/26.ded019be.js"><link rel="prefetch" href="/assets/js/27.07a469c4.js"><link rel="prefetch" href="/assets/js/28.6bee5eea.js"><link rel="prefetch" href="/assets/js/29.8cbe3e1c.js"><link rel="prefetch" href="/assets/js/30.c4c76b06.js"><link rel="prefetch" href="/assets/js/31.f15d3cc6.js"><link rel="prefetch" href="/assets/js/32.83e4f1c8.js"><link rel="prefetch" href="/assets/js/33.f768a8c2.js"><link rel="prefetch" href="/assets/js/34.38df6817.js"><link rel="prefetch" href="/assets/js/35.35022b91.js"><link rel="prefetch" href="/assets/js/36.f0a7e00e.js">
+    <link rel="stylesheet" href="/assets/css/37.styles.a8404639.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div><a href="/" class="home-link router-link-active"><!----><span class="site-name">
+      霍梦林的个人博客
+    </span></a><div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""><!----></div><nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">Home</a></div><div class="nav-item"><a href="/about/" class="nav-link">About</a></div><div class="nav-item"><a href="/problem/" class="nav-link">Problem</a></div><div class="nav-item"><a href="/study/" class="nav-link router-link-active">Study</a></div><div class="nav-item"><a href="http://blog.csdn.net/weixin_38318244/" target="_blank" rel="noopener noreferrer" class="nav-link">CSDN</a></div><div class="nav-item"><a href="https://github.com/momo-0902" target="_blank" rel="noopener noreferrer" class="nav-link">Github</a></div><!----></nav></div></header><div class="sidebar-mask"></div><div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">Home</a></div><div class="nav-item"><a href="/about/" class="nav-link">About</a></div><div class="nav-item"><a href="/problem/" class="nav-link">Problem</a></div><div class="nav-item"><a href="/study/" class="nav-link router-link-active">Study</a></div><div class="nav-item"><a href="http://blog.csdn.net/weixin_38318244/" target="_blank" rel="noopener noreferrer" class="nav-link">CSDN</a></div><div class="nav-item"><a href="https://github.com/momo-0902" target="_blank" rel="noopener noreferrer" class="nav-link">Github</a></div><!----></nav><ul class="sidebar-links"><li><a href="/study/" class="sidebar-link">学习笔记</a></li><li><a href="/study/axios.html" class="sidebar-link">1.axios</a></li><li><a href="/study/document.html" class="sidebar-link">2.document</a></li><li><a href="/study/css.html" class="sidebar-link">3.css</a></li><li><a href="/study/css选择器.html" class="sidebar-link">4.css选择器</a></li><li><a href="/study/flex.html" class="sidebar-link">5.flex</a></li><li><a href="/study/git.html" class="sidebar-link">6.git</a></li><li><a href="/study/html.html" class="sidebar-link">7.html</a></li><li><a href="/study/http.html" class="sidebar-link">8.http</a></li><li><a href="/study/input.html" class="sidebar-link">9.input</a></li><li><a href="/study/js语言基础.html" class="sidebar-link">10.js语言基础</a></li><li><a href="/study/RSA加密.html" class="active sidebar-link">12.RSA加密</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/study/RSA加密.html#什么是rsa加密" class="sidebar-link">什么是RSA加密</a></li><li class="sidebar-sub-header"><a href="/study/RSA加密.html#rsa流程" class="sidebar-link">RSA流程</a></li></ul></li><li><a href="/study/vue-router.html" class="sidebar-link">13.vue-router</a></li><li><a href="/study/vue.html" class="sidebar-link">14.vue</a></li><li><a href="/study/vuex.html" class="sidebar-link">15.vuex</a></li><li><a href="/study/vuePress.html" class="sidebar-link">16.vuePress</a></li><li><a href="/study/zepto.html" class="sidebar-link">17.zepto</a></li><li><a href="/study/代码逻辑优化.html" class="sidebar-link">18.代码逻辑优化</a></li><li><a href="/study/判断是否滚动到页面底部.html" class="sidebar-link">19.判断是否滚动到页面底部</a></li><li><a href="/study/找错误原因.html" class="sidebar-link">20.找错误原因</a></li><li><a href="/study/本地缓存.html" class="sidebar-link">21.本地缓存</a></li><li><a href="/study/算法.html" class="sidebar-link">22.算法</a></li><li><a href="/study/vue使用事件委托实现手风琴.html" class="sidebar-link">23.vue使用事件委托实现手风琴</a></li><li><a href="/study/generator.html" class="sidebar-link">24.异步编程-generator</a></li><li><a href="/study/抓包调试工具.html" class="sidebar-link">25.抓包调试工具</a></li><li><a href="/study/暂未分类.html" class="sidebar-link">26.暂未分类</a></li></ul></div><div class="page"><div class="content"><h1 id="加密——rsa前端与后台的加密与解密"><a href="#加密——rsa前端与后台的加密与解密" aria-hidden="true" class="header-anchor">#</a> 加密——RSA前端与后台的加密与解密</h1><h2 id="什么是rsa加密"><a href="#什么是rsa加密" aria-hidden="true" class="header-anchor">#</a> 什么是RSA加密</h2><p>RSA加密算法是一种非对称加密算法，所谓非对称，就是指该算法需要一对密钥，使用其中一个加密，则需要肜另一个才能解密，利用对极大整数做因数分解的难度决定了RSA算法的可靠性</p><p>RSA的算法涉及三个参数，n、e1、e2</p><p>其中，n是两个大质数 p、q的积，n的二进制表示所占用的位数，就是所谓的密钥长度</p><p>e1和e2是一对相关的值，e1可以任意取，但要求与(p-1) * (q-1)互质；再选择e2，要求(e2 * e1) = 1 (mod(p-1) * (q-1))</p><p>(n,e1),(n,e2)就是密钥对，其中(n,e1)为公钥，(n,e2为公钥)</p><p>RSA加密解密算法完全相同，设A为明文，B为密文，则：A = B ^ e2 (mod n) ;B = A ^ e1 (mod n)</p><p>e2和e1可以互换使用，即:</p><p>A = B ^ e1 (mod n); B = A ^ e2 (mod n)</p><p>RSA算法原理可见：
+<a href="http://www.ruanyifeng.com/blog/2013/06/rsa_algorithm_part_one.html" target="_blank" rel="noopener noreferrer">阮一峰RSA加密算法一</a><a href="http://www.ruanyifeng.com/blog/2013/07/rsa_algorithm_part_two.html" target="_blank" rel="noopener noreferrer">阮一峰RSA加密算法二</a></p><h2 id="rsa流程"><a href="#rsa流程" aria-hidden="true" class="header-anchor">#</a> RSA流程</h2><p>1.后端生成publicKey与privateKey
+2.后端返回publicKey给前端
+3.前台使用publicKey给敏感字段加密
+4.使用post方式发送数据给后端
+5.后端使用publicKey与pvivateKey进行解密。</p><h3 id="使用加密库cryptico为数据加密"><a href="#使用加密库cryptico为数据加密" aria-hidden="true" class="header-anchor">#</a> 使用加密库cryptico为数据加密</h3><p>1.需要加密时先请求后台的getrsa接口，后台会返回加密公钥</p><pre class="language-text"><code>api.js 管理接口地址
+// 获取 rsa
+'getrsa': '/api/safe/getrsa',
+
+</code></pre><p>2.定义加密方法</p><pre class="language-text"><code>// services.js 配置请求方式与请求函数名称
+export function getRsa() {
+  return http.get(apis.getrsa)
+}
+// 判断是生产环境才进行加密
+export function encrypt(val) {
+  if (process.env.NODE_ENV === 'production') {
+    return getRsa().then( res =&gt; {
+      // 定义公钥为接口返回结果
+      const publicKey = res
+      // 实例化加密系数
+      const rsakey = new RSAKey()
+      // 根据 rsa加密公式 m^e = c (mod n)，使用公钥(n,e)对m进行加密，m即为加密指数'10001'
+      rsakey.setPublic(publicKey, '10001')
+      // 返回加密后的数据
+      return rsakey.encrypt(val)
+      })
+  } else {
+    // 如果不是生产环境，直接把promise状态变为已完成，返回成功状态（即不加密但会对执行加密成功后的函数）。
+    return Promise.resolve(val)
+  }
+}
+
+</code></pre><p>3.为数据加密</p><pre class="language-text"><code>// 引入加密函数
+import { encrypt, postLoginInfo } from 'services'
+// 登录
+login() {
+  const params = {}
+  // 使用Promise.all()方法给数据加密，promise.all()访求提供了并行执行异步操作的能力，并且在所有异步操作执行完毕后才执行回调。all接收一个数组参数，里边的值最终都返回promise对象。然后放进一个数组中传给then,用values接收
+  Promise.all([
+    encrypt(this.password),
+    encrypt(this.phoneNum)
+    ]).then(values =&gt; {
+      params.pwd = vlaues[0]
+      params.mobile = values[1]
+      postLoginInfo(params).then((res) =&gt; {
+        this.$router.push('/')
+        }).catch((err) =&gt; {
+          console.log(err)
+        })
+    }).catch((err) =&gt; {
+      console.log(err)
+    })
+}
+</code></pre></div><!----><div class="content page-nav"><p class="inner"><span class="prev">
+        ← <a href="/study/js语言基础.html" class="prev">
+          10.js语言基础
+        </a></span><span class="next"><a href="/study/vue-router.html">
+          13.vue-router
+        </a> →
+      </span></p></div></div></div></div>
+    <script src="/assets/js/24.431bdd30.js" defer></script><script src="/assets/js/app.df01d24c.js" defer></script>
+  </body>
+</html>
