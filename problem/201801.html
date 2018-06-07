@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>霍梦林的个人博客 | 箭头函数自动执行解决编译后的js只执行一次</title>
+    <meta name="description" content="Just playing around">
+    
+    
+    <link rel="preload" href="/assets/css/45.styles.1e8d81e3.css" as="style"><link rel="preload" href="/assets/js/app.8cda3e1e.js" as="script"><link rel="preload" href="/assets/js/38.6dcc66bd.js" as="script"><link rel="prefetch" href="/assets/js/22.c7c99713.js"><link rel="prefetch" href="/assets/js/0.61024633.js"><link rel="prefetch" href="/assets/js/1.d5e0e0b1.js"><link rel="prefetch" href="/assets/js/2.5dd7926e.js"><link rel="prefetch" href="/assets/js/3.f8749a19.js"><link rel="prefetch" href="/assets/js/4.6311a437.js"><link rel="prefetch" href="/assets/js/5.373f6562.js"><link rel="prefetch" href="/assets/js/6.8011ad50.js"><link rel="prefetch" href="/assets/js/7.48a53add.js"><link rel="prefetch" href="/assets/js/8.97fb2bbb.js"><link rel="prefetch" href="/assets/js/9.ba2fab2c.js"><link rel="prefetch" href="/assets/js/10.09ff9892.js"><link rel="prefetch" href="/assets/js/11.9eae7453.js"><link rel="prefetch" href="/assets/js/12.ddaa1892.js"><link rel="prefetch" href="/assets/js/13.bded95c0.js"><link rel="prefetch" href="/assets/js/14.f95a8969.js"><link rel="prefetch" href="/assets/js/15.bd65339c.js"><link rel="prefetch" href="/assets/js/16.46869c30.js"><link rel="prefetch" href="/assets/js/17.55258bc9.js"><link rel="prefetch" href="/assets/js/18.7606ca85.js"><link rel="prefetch" href="/assets/js/19.ed014520.js"><link rel="prefetch" href="/assets/js/20.f5e9fce8.js"><link rel="prefetch" href="/assets/js/21.7798d633.js"><link rel="prefetch" href="/assets/js/23.a13caa11.js"><link rel="prefetch" href="/assets/js/24.fdf67551.js"><link rel="prefetch" href="/assets/js/25.1a5dc081.js"><link rel="prefetch" href="/assets/js/26.504aac1a.js"><link rel="prefetch" href="/assets/js/27.be80cda2.js"><link rel="prefetch" href="/assets/js/28.6fd82bb5.js"><link rel="prefetch" href="/assets/js/29.8833da62.js"><link rel="prefetch" href="/assets/js/30.3cbcb4ec.js"><link rel="prefetch" href="/assets/js/31.eec87b3d.js"><link rel="prefetch" href="/assets/js/32.f16b89ad.js"><link rel="prefetch" href="/assets/js/33.0c2aa20b.js"><link rel="prefetch" href="/assets/js/34.dc6f2133.js"><link rel="prefetch" href="/assets/js/35.d9856754.js"><link rel="prefetch" href="/assets/js/36.ff458ef4.js"><link rel="prefetch" href="/assets/js/37.601172ff.js"><link rel="prefetch" href="/assets/js/39.a907d374.js"><link rel="prefetch" href="/assets/js/40.bad0854c.js"><link rel="prefetch" href="/assets/js/41.c6497027.js"><link rel="prefetch" href="/assets/js/42.90031833.js"><link rel="prefetch" href="/assets/js/43.c068d093.js"><link rel="prefetch" href="/assets/js/44.4510e090.js">
+    <link rel="stylesheet" href="/assets/css/45.styles.1e8d81e3.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div><a href="/" class="home-link router-link-active"><!----><span class="site-name">
+      霍梦林的个人博客
+    </span></a><div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""><!----></div><nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">Home</a></div><div class="nav-item"><a href="/problem/" class="nav-link router-link-active">Problem</a></div><div class="nav-item"><a href="/study/" class="nav-link">Study</a></div><div class="nav-item"><a href="http://blog.csdn.net/weixin_38318244/" target="_blank" rel="noopener noreferrer" class="nav-link">CSDN</a></div><div class="nav-item"><a href="https://github.com/momo-0902" target="_blank" rel="noopener noreferrer" class="nav-link">Github</a></div><!----></nav></div></header><div class="sidebar-mask"></div><div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">Home</a></div><div class="nav-item"><a href="/problem/" class="nav-link router-link-active">Problem</a></div><div class="nav-item"><a href="/study/" class="nav-link">Study</a></div><div class="nav-item"><a href="http://blog.csdn.net/weixin_38318244/" target="_blank" rel="noopener noreferrer" class="nav-link">CSDN</a></div><div class="nav-item"><a href="https://github.com/momo-0902" target="_blank" rel="noopener noreferrer" class="nav-link">Github</a></div><!----></nav><ul class="sidebar-links"><li><a href="/problem/" class="sidebar-link">项目中遇到的问题</a></li><li><a href="/problem/201709.html" class="sidebar-link">201709</a></li><li><a href="/problem/201710.html" class="sidebar-link">201710</a></li><li><a href="/problem/201711.html" class="sidebar-link">201711</a></li><li><a href="/problem/201712.html" class="sidebar-link">201712</a></li><li><a href="/problem/201801.html" class="active sidebar-link">201801</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/problem/201801.html#箭头函数自动执行解决编译后的js只执行一次" class="sidebar-link">箭头函数自动执行解决编译后的js只执行一次</a></li></ul></li><li><a href="/problem/201803.html" class="sidebar-link">201803</a></li><li><a href="/problem/201804.html" class="sidebar-link">201804</a></li><li><a href="/problem/201805.html" class="sidebar-link">201805</a></li></ul></div><div class="page"><div class="content"><h2 id="箭头函数自动执行解决编译后的js只执行一次"><a href="#箭头函数自动执行解决编译后的js只执行一次" aria-hidden="true" class="header-anchor">#</a> 箭头函数自动执行解决编译后的js只执行一次</h2><pre class="language-text"><code>项目：《钱隆归来》
+时间：2018年1月10日
+问题：在引入的级联菜单对话框中，将对话框中显示的数据以外部js文件方式引入，但是当页面后退再返回（重新选择数据条目）后数据列表的条目并不会发生改变
+描述：编译后的js脚本只自动执行一次，刷新页面才会重新执行
+解决办法：将js文件中的方法改成箭头函数自动执行
+问题代码：
+……
+const cascadeData = ……
+export default cascadeData
+
+正确代码:
+let formatData = () =&gt; {
+  const cascadeData = ……
+  return cascadeData
+}
+export default formatData
+
+</code></pre></div><!----><div class="content page-nav"><p class="inner"><span class="prev">
+        ← <a href="/problem/201712.html" class="prev">
+          201712
+        </a></span><span class="next"><a href="/problem/201803.html">
+          201803
+        </a> →
+      </span></p></div></div></div></div>
+    <script src="/assets/js/38.6dcc66bd.js" defer></script><script src="/assets/js/app.8cda3e1e.js" defer></script>
+  </body>
+</html>

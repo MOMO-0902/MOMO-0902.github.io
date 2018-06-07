@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>霍梦林的个人博客 | destoryed与beforeDestory</title>
+    <meta name="description" content="Just playing around">
+    
+    
+    <link rel="preload" href="/assets/css/45.styles.1e8d81e3.css" as="style"><link rel="preload" href="/assets/js/app.8cda3e1e.js" as="script"><link rel="preload" href="/assets/js/39.a907d374.js" as="script"><link rel="prefetch" href="/assets/js/22.c7c99713.js"><link rel="prefetch" href="/assets/js/0.61024633.js"><link rel="prefetch" href="/assets/js/1.d5e0e0b1.js"><link rel="prefetch" href="/assets/js/2.5dd7926e.js"><link rel="prefetch" href="/assets/js/3.f8749a19.js"><link rel="prefetch" href="/assets/js/4.6311a437.js"><link rel="prefetch" href="/assets/js/5.373f6562.js"><link rel="prefetch" href="/assets/js/6.8011ad50.js"><link rel="prefetch" href="/assets/js/7.48a53add.js"><link rel="prefetch" href="/assets/js/8.97fb2bbb.js"><link rel="prefetch" href="/assets/js/9.ba2fab2c.js"><link rel="prefetch" href="/assets/js/10.09ff9892.js"><link rel="prefetch" href="/assets/js/11.9eae7453.js"><link rel="prefetch" href="/assets/js/12.ddaa1892.js"><link rel="prefetch" href="/assets/js/13.bded95c0.js"><link rel="prefetch" href="/assets/js/14.f95a8969.js"><link rel="prefetch" href="/assets/js/15.bd65339c.js"><link rel="prefetch" href="/assets/js/16.46869c30.js"><link rel="prefetch" href="/assets/js/17.55258bc9.js"><link rel="prefetch" href="/assets/js/18.7606ca85.js"><link rel="prefetch" href="/assets/js/19.ed014520.js"><link rel="prefetch" href="/assets/js/20.f5e9fce8.js"><link rel="prefetch" href="/assets/js/21.7798d633.js"><link rel="prefetch" href="/assets/js/23.a13caa11.js"><link rel="prefetch" href="/assets/js/24.fdf67551.js"><link rel="prefetch" href="/assets/js/25.1a5dc081.js"><link rel="prefetch" href="/assets/js/26.504aac1a.js"><link rel="prefetch" href="/assets/js/27.be80cda2.js"><link rel="prefetch" href="/assets/js/28.6fd82bb5.js"><link rel="prefetch" href="/assets/js/29.8833da62.js"><link rel="prefetch" href="/assets/js/30.3cbcb4ec.js"><link rel="prefetch" href="/assets/js/31.eec87b3d.js"><link rel="prefetch" href="/assets/js/32.f16b89ad.js"><link rel="prefetch" href="/assets/js/33.0c2aa20b.js"><link rel="prefetch" href="/assets/js/34.dc6f2133.js"><link rel="prefetch" href="/assets/js/35.d9856754.js"><link rel="prefetch" href="/assets/js/36.ff458ef4.js"><link rel="prefetch" href="/assets/js/37.601172ff.js"><link rel="prefetch" href="/assets/js/38.6dcc66bd.js"><link rel="prefetch" href="/assets/js/40.bad0854c.js"><link rel="prefetch" href="/assets/js/41.c6497027.js"><link rel="prefetch" href="/assets/js/42.90031833.js"><link rel="prefetch" href="/assets/js/43.c068d093.js"><link rel="prefetch" href="/assets/js/44.4510e090.js">
+    <link rel="stylesheet" href="/assets/css/45.styles.1e8d81e3.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div><a href="/" class="home-link router-link-active"><!----><span class="site-name">
+      霍梦林的个人博客
+    </span></a><div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""><!----></div><nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">Home</a></div><div class="nav-item"><a href="/problem/" class="nav-link router-link-active">Problem</a></div><div class="nav-item"><a href="/study/" class="nav-link">Study</a></div><div class="nav-item"><a href="http://blog.csdn.net/weixin_38318244/" target="_blank" rel="noopener noreferrer" class="nav-link">CSDN</a></div><div class="nav-item"><a href="https://github.com/momo-0902" target="_blank" rel="noopener noreferrer" class="nav-link">Github</a></div><!----></nav></div></header><div class="sidebar-mask"></div><div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">Home</a></div><div class="nav-item"><a href="/problem/" class="nav-link router-link-active">Problem</a></div><div class="nav-item"><a href="/study/" class="nav-link">Study</a></div><div class="nav-item"><a href="http://blog.csdn.net/weixin_38318244/" target="_blank" rel="noopener noreferrer" class="nav-link">CSDN</a></div><div class="nav-item"><a href="https://github.com/momo-0902" target="_blank" rel="noopener noreferrer" class="nav-link">Github</a></div><!----></nav><ul class="sidebar-links"><li><a href="/problem/" class="sidebar-link">项目中遇到的问题</a></li><li><a href="/problem/201709.html" class="sidebar-link">201709</a></li><li><a href="/problem/201710.html" class="sidebar-link">201710</a></li><li><a href="/problem/201711.html" class="sidebar-link">201711</a></li><li><a href="/problem/201712.html" class="active sidebar-link">201712</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/problem/201712.html#destoryed与beforedestory" class="sidebar-link">destoryed与beforeDestory</a></li><li class="sidebar-sub-header"><a href="/problem/201712.html#filters中this的指向" class="sidebar-link">filters中this的指向</a></li><li class="sidebar-sub-header"><a href="/problem/201712.html#filters传多个参数" class="sidebar-link">filters传多个参数</a></li><li class="sidebar-sub-header"><a href="/problem/201712.html#过比较两个对象中的key来判断是否相等" class="sidebar-link">过比较两个对象中的key来判断是否相等</a></li><li class="sidebar-sub-header"><a href="/problem/201712.html#对象的赋值操作为引用地址方式" class="sidebar-link">对象的赋值操作为引用地址方式</a></li><li class="sidebar-sub-header"><a href="/problem/201712.html#为数组对象增加删除指定元素的方法" class="sidebar-link">为数组对象增加删除指定元素的方法</a></li><li class="sidebar-sub-header"><a href="/problem/201712.html#使用filters方法进行数组去重" class="sidebar-link">使用filters方法进行数组去重</a></li><li class="sidebar-sub-header"><a href="/problem/201712.html#switch-return-和break不能一起用" class="sidebar-link">switch return 和break不能一起用</a></li><li class="sidebar-sub-header"><a href="/problem/201712.html#请求接口格式" class="sidebar-link">请求接口格式</a></li><li class="sidebar-sub-header"><a href="/problem/201712.html#问题1：移动端字体小于12px时使用line-height字体整体靠上" class="sidebar-link">问题1：移动端字体小于12px时使用line-height字体整体靠上</a></li><li class="sidebar-sub-header"><a href="/problem/201712.html#只有dom方法才会真实接受-event对象" class="sidebar-link">只有dom方法才会真实接受$event对象</a></li><li class="sidebar-sub-header"><a href="/problem/201712.html#正则表达式格式" class="sidebar-link">正则表达式格式</a></li><li class="sidebar-sub-header"><a href="/problem/201712.html#接口返回状态码是数字" class="sidebar-link">接口返回状态码是数字</a></li><li class="sidebar-sub-header"><a href="/problem/201712.html#请求接口参数格式" class="sidebar-link">请求接口参数格式</a></li><li class="sidebar-sub-header"><a href="/problem/201712.html#disabled是input标签的属性" class="sidebar-link">disabled是input标签的属性</a></li><li class="sidebar-sub-header"><a href="/problem/201712.html#根据个人信息在显示不同状态" class="sidebar-link">根据个人信息在显示不同状态</a></li><li class="sidebar-sub-header"><a href="/problem/201712.html#微信浏览器不能使用window-location-reload-成功刷新" class="sidebar-link">微信浏览器不能使用window.location.reload()成功刷新</a></li><li class="sidebar-sub-header"><a href="/problem/201712.html#vue中执行对dom进行操作的js代码应该放在vue-nexttick-中" class="sidebar-link">vue中执行对dom进行操作的js代码应该放在Vue.nextTick()中</a></li><li class="sidebar-sub-header"><a href="/problem/201712.html#vue-dom更新updated" class="sidebar-link">vue dom更新updated</a></li></ul></li><li><a href="/problem/201801.html" class="sidebar-link">201801</a></li><li><a href="/problem/201803.html" class="sidebar-link">201803</a></li><li><a href="/problem/201804.html" class="sidebar-link">201804</a></li><li><a href="/problem/201805.html" class="sidebar-link">201805</a></li></ul></div><div class="page"><div class="content"><h2 id="destoryed与beforedestory"><a href="#destoryed与beforedestory" aria-hidden="true" class="header-anchor">#</a> destoryed与beforeDestory</h2><pre class="language-text"><code>项目：《钱隆归来》
+时间：2017年11月24日
+问题：在destoryed中清掉计时器不起作用
+描述：destoryed函数在实例销毁之前调用，在这一步，实例完全可用。
+在beforeDestory在实例销毁之后调用，在这一步，实例就不可用了。
+
+</code></pre><h2 id="filters中this的指向"><a href="#filters中this的指向" aria-hidden="true" class="header-anchor">#</a> filters中this的指向</h2><pre class="language-text"><code>项目：《招生宝》
+时间：2017年11月29日
+问题2：在filters中使用data中定义的属性报错undefined
+描述：filters中this为undefined,使用
+解决办法：可在filters中定义变量再使用
+关键代码：
+filters: {
+  filterBtnTitle(item,args) {
+    let  btnTitle
+    console.log(args)
+    if (item.teacherConfirmStatus) {
+      if (item.paused === 1) {
+        // 1是暂停，代表学生发起了撤消请求
+        btnTitle = '同意撤消'
+      }
+      btnTitle = '已确认'
+    } else {
+      btnTitle = '确认为我的学生'
+    }
+    return btnTitle
+  }
+},
+
+</code></pre><h2 id="filters传多个参数"><a href="#filters传多个参数" aria-hidden="true" class="header-anchor">#</a> filters传多个参数</h2><pre class="language-text"><code>项目：《招生宝》
+时间：2017年11月29日
+问题：使用filters传多个参数，位置互换返回结果错误
+描述：使用(item.orderNo, item.paused) | filterBtnTitle方式来传参数错误，filters管道符前边的参数为第一个参数，第二个，第三个参数应该依次在filters方法后边。
+&lt;div&gt;{{(item) | filterBtnTitle(item.paused)}}&lt;/div&gt;
+
+</code></pre><h2 id="过比较两个对象中的key来判断是否相等"><a href="#过比较两个对象中的key来判断是否相等" aria-hidden="true" class="header-anchor">#</a> 过比较两个对象中的key来判断是否相等</h2><pre class="language-text"><code>项目：《招生宝》
+时间：2017年12月4日
+问题：使用===判断两个对象是否相等，返回false
+描述：因为一个是写进数组的对象，一个是在页面中点击产生的对象，对象是引用地址方式，两个不同引用地址比较结果肯定是false
+解决办法：通过比较两个对象中的key来判断是否相等。
+错误代码：：
+// 判断指定元素是否在数组中,因为两个数组并不相等，所以一直返回false，但此处复选框没必要去判断元素是否已在数组中，因为点一下添加进数组中，再点一下就删除了
+isInArray(arr, value){
+  for(var i = 0; i &lt; arr.length; i++){
+    // if(value.orderNo === arr[i].orderNo){
+    //   console.log(11111111);
+    //   return true;
+    // }
+  }
+  return false;
+},
+</code></pre><h2 id="对象的赋值操作为引用地址方式"><a href="#对象的赋值操作为引用地址方式" aria-hidden="true" class="header-anchor">#</a> 对象的赋值操作为引用地址方式</h2><pre class="language-text"><code>项目：《招生宝》
+时间：2017年12月4日
+问题：先定义一个对象为它赋值，再定义第二个对象等于第一个对象，再为第二个对象赋值，此时打印第一个对象和第二个对象的值是相等的，因为此时两个对象引用同一地址
+let obj1=new Object()
+obj1.name='Frank'
+let obj2=obj1
+obj2.name='Muse'
+console.log(obj1.name);
+</code></pre><h2 id="为数组对象增加删除指定元素的方法"><a href="#为数组对象增加删除指定元素的方法" aria-hidden="true" class="header-anchor">#</a> 为数组对象增加删除指定元素的方法</h2><pre class="language-text"><code>项目：《招生宝》
+时间：2017年12月4日
+问题：
+// 为数组对象增加删除指定元素的方法
+  removeByValue(arr, val) {
+    for(var i=0; i&lt;arr.length; i++) {
+      if(arr[i] === val) {
+        arr.splice(i, 1);
+        break;
+      }
+    }
+  },
+
+</code></pre><h2 id="使用filters方法进行数组去重"><a href="#使用filters方法进行数组去重" aria-hidden="true" class="header-anchor">#</a> 使用filters方法进行数组去重</h2><pre class="language-text"><code>项目：《招生宝》
+时间：2017年12月4日
+问题：先判断元素是否在数组中，如果在就删除，我用了上述isInArray，removeByValue两个方法先后来操作，但此处可巧妙运用数组的filters方法，直接返回数组中不等于当前选中元素的那一项，就实现了删除相等的那一项
+关键代码：
+let arr = arr.filters(item =&gt; {
+  return item.orderNo !== item.orderNo
+  })
+
+</code></pre><h2 id="switch-return-和break不能一起用"><a href="#switch-return-和break不能一起用" aria-hidden="true" class="header-anchor">#</a> switch return 和break不能一起用</h2><pre class="language-text"><code>项目：《招生宝》
+时间： 2017年12月4日
+问题：在switch分支处语法检查报错 Unreachable code  no-unreachable
+描述： switch return 和break不能一起用
+解决办法：将switch返回结果赋值给一个变量，最后再返回这个变量
+
+</code></pre><h2 id="请求接口格式"><a href="#请求接口格式" aria-hidden="true" class="header-anchor">#</a> 请求接口格式</h2><pre class="language-text"><code>项目：《招生宝》
+时间： 2017年12月4日
+问题：请求接口提交数据格式不正确，
+描述: 在外边给json赋值后，用的时候又用了{}括起来了，提交数据格式为json时，可以直接用post({key:value}),也可以先赋值再使用
+错误代码：
+const params ={}
+  query.then({params}).then().catch()
+正确代码：
+1.queryOrderList({
+    uname: keywords
+  })
+2.const params = {}
+  params.uname = keywords
+  queryOrderList(params).then().catch()
+
+</code></pre><h2 id="问题1：移动端字体小于12px时使用line-height字体整体靠上"><a href="#问题1：移动端字体小于12px时使用line-height字体整体靠上" aria-hidden="true" class="header-anchor">#</a> 问题1：移动端字体小于12px时使用line-height字体整体靠上</h2><pre class="language-text"><code>项目：《招生宝》
+时间：2017年12月4日
+问题1：移动端字体小于12px时使用line-height字体整体靠上
+解决办法： display:tabel默认是垂直居中，使用display: table来实现垂直居中效果并不是特别明显，所以再配合使用缩放来对元素进行缩放，给要垂直居中的元素外再套一层
+关键代码：
+.wrapper {
+  display: table,
+  font-size: 20px;
+  height: 28px;
+  line-height: 28px;
+  width: 72px;
+  transform: scale(0.5),
+  // transform-origin 设置旋转元素的基点位置，必须与transform一起使用
+  transform-origin: 100% 100%
+  span {
+    display: tabel-cell;
+    vertical-align: middle;
+  }
+}
+问题2：使用transform:scale可以实现缩放，但还占据着原来的空间，导致元素没有在原本应该的位置上显示
+解决办法： 使用zoom: 0.5来进行缩放，还不占据空间，zoom: 设置或检索对象的缩放比例
+
+</code></pre><h2 id="只有dom方法才会真实接受-event对象"><a href="#只有dom方法才会真实接受-event对象" aria-hidden="true" class="header-anchor">#</a> 只有dom方法才会真实接受$event对象</h2><pre class="language-text"><code>项目：《招生宝》
+时间：2017年12月4日
+问题：页面显示数据使用{{btnTitle(item.status, item.no, $event)}}方法来根据数据显示按钮样式，本想用$event来获得当前对象来改变其背景图，但$event为undefined
+描述：此处用来过滤功能的btnTitle方法并不是一个dom方法，所以并不会真实接受$evnet对象
+解决办法：在此用一个flag来做标志，如果是特殊样式falg = true,如果不是flag = false，然后当flag= true时添加class名，获取元素方法使用获取元素方法使用refs,给按钮绑定refs
+关键代码：
+&lt;a class=&quot;confirm-button tac c3e&quot; ref=&quot;btns&quot;  @click=&quot;handleClick(item.teacherConfirmStatus, item.paused, item.orderNo)&quot; :class=&quot;{'confirmed': isconfirm}&quot; v-show=&quot;buttonShow === 'all'&quot;&gt;{{filterBtnTitle(item.teacherConfirmStatus, item.paused, item.status,key)}}&lt;/a&gt;
+
+let flag = true
+if (status = '同意撤消') {
+  flag = false
+}
+if (flag) {
+  this.nextTick(() =&gt; {
+    this.$refs.btns[index].className ='confirmed'
+  })
+}
+</code></pre><h2 id="正则表达式格式"><a href="#正则表达式格式" aria-hidden="true" class="header-anchor">#</a> 正则表达式格式</h2><pre class="language-text"><code>项目：《招生宝》
+时间：2017年12月6日
+问题：正则表达式不起作用
+描述：格式错误
+正则表达式   let newTime = /\d{4}-\d{1,2}-\d{1,2}/g.exec(time)写成了  let newTime = /\d(4)-\d(1,2)-\d(1,2)/g.exec(time)
+newTime[0].replace(/-/g, '.')写成了newTime[0].replace(\-\g, '.')
+
+</code></pre><h2 id="接口返回状态码是数字"><a href="#接口返回状态码是数字" aria-hidden="true" class="header-anchor">#</a> 接口返回状态码是数字</h2><pre class="language-text"><code>项目：《招生宝》
+时间：2017年12月6日
+问题：请求mock数据接口时接口状态一直返回失败，
+描述：状态码2000000写成了“2000000”
+错误代码： {
+  &quot;path&quot;: &quot;&quot;,
+  &quot;delay&quot;: 500,
+  &quot;name&quot;: &quot;&quot;,
+  &quot;description&quot;: &quot;&quot;,
+  &quot;isPaging&quot;: false,
+  &quot;datasource&quot;: &quot;success.data&quot;,
+  &quot;responseName&quot;: &quot;success&quot;,
+  &quot;response&quot;: {
+    &quot;success&quot;: {
+      &quot;retcode&quot;: &quot;5000000&quot;,
+      &quot;message&quot;: &quot;获取数据成功&quot;,
+      &quot;data&quot;: {}
+    },
+    &quot;failure&quot;: {
+      &quot;code&quot;: &quot;201&quot;,
+      &quot;status&quot;: &quot;FAILURE&quot;,
+      &quot;message&quot;: &quot;服务异常&quot;
+    }
+  }
+}
+正确代码 ：
+{
+  &quot;path&quot;: &quot;&quot;,
+  &quot;delay&quot;: 500,
+  &quot;name&quot;: &quot;&quot;,
+  &quot;description&quot;: &quot;&quot;,
+  &quot;isPaging&quot;: false,
+  &quot;datasource&quot;: &quot;success.data&quot;,
+  &quot;responseName&quot;: &quot;success&quot;,
+  &quot;response&quot;: {
+    &quot;success&quot;: {
+      &quot;retcode&quot;: 5000000,
+      &quot;message&quot;: &quot;获取数据成功&quot;,
+      &quot;data&quot;: {}
+    },
+    &quot;failure&quot;: {
+      &quot;code&quot;: 201,
+      &quot;status&quot;: &quot;FAILURE&quot;,
+      &quot;message&quot;: &quot;服务异常&quot;
+    }
+  }
+}
+
+
+</code></pre><h2 id="请求接口参数格式"><a href="#请求接口参数格式" aria-hidden="true" class="header-anchor">#</a> 请求接口参数格式</h2><pre class="language-text"><code>项目：《招生宝》
+时间：2017年12月6日
+问题：向后台 传参数时需要的是数组，但得到的是json
+描述：因为传参数时传的时候用的{}括起来了，而括号里是一个数组，所以是json格式，并不是数组都是这样默认显示的（数组名，数组值），这明显是json格式。
+错误代码：  confirmBatch(
+                {batchArr}
+              ).then((res) =&gt; {
+                this.$dialog.alert(res.message)
+                // window.location.reload()
+              }).catch((err) =&gt; {
+                this.$dialog.alert(err.message)
+              })
+              得到的错误结果：{&quot;batchArr&quot;: [{&quot;orderNo&quot;: &quot;1323&quot;}]}
+
+</code></pre><h2 id="disabled是input标签的属性"><a href="#disabled是input标签的属性" aria-hidden="true" class="header-anchor">#</a> disabled是input标签的属性</h2><pre class="language-text"><code>项目：《招生宝》
+时间：2017年12月6日
+问题：做批量确认时，当所选学生订单数量为0时，disabled不可用
+描述：一直以为是数据判断或者属性绑定方法有错误 ，但经过各种测试都没错，百度才发现disabled是input标签专属的属性！
+
+以下摘自w3school：
+input标签的disabled属性，规定应该禁用input元素！
+
+</code></pre><h2 id="根据个人信息在显示不同状态"><a href="#根据个人信息在显示不同状态" aria-hidden="true" class="header-anchor">#</a> 根据个人信息在显示不同状态</h2><pre class="language-text"><code>项目：《招生宝》
+时间：2017年12月7日
+问题：批量确认时，弹出框要弹出老师选择了某某某等几个学生，所以我把学生名字放在了一个数组里，我做的操作是当选中时单击删除，未选中时单击添加，但出现一种情况是删除一个数组就清空了，长度也变为0
+描述：从数组中删除元素时使用的方法是比较学生名字，忽略了学生同名的情况，当学生同名时，把名字数组里的相同元素都删除了，但其他未点击的元素样式没变，还是已选中状态，也有被这一状态迷惑的原因。后来尝试比较学生id，但同一个学生可能有两个订单，所以也可能删除两个订单，改为比较订单号
+解决办法：
+调用方法时将学生姓名与学生订单号一同传递给批量确认的方法，将两个属性作为组成一个对象，然后写进数组中，再进行显示
+关键代码： &lt;input type = &quot;checkout&quot; @click=&quot;handleSelected&quot;&gt;&lt;/div&gt;
+
+handleSelected(orderNo, index, $event, uname) {
+    var orderNoObj = {}
+    orderNoObj.orderNo = orderNo
+    // 获取当前元素,即当前列表项
+    var $curr = $event.currentTarget
+    // 设置当前元素背景图为选中状态
+    if ($curr.className === 'unChecked') {
+      $curr.className = 'checked'
+      this.batchArr.push(orderNoObj)
+      var selectedObj = {}
+      selectedObj.uname = uname
+      selectedObj.orderNo = orderNo
+      this.batchNameArr.push(selectedObj)
+    } else {
+      // 设置当前元素背景图为未选中状态
+      $curr.className = 'unChecked'
+      // 使用filters删除指定元素
+      this.batchArr = this.batchArr.filter((item) =&gt; {
+        return item.orderNo !== orderNo
+      })
+      this.batchNameArr = this.batchNameArr.filter((item) =&gt; {
+        return item.orderNo !== orderNo
+      })
+    }
+  }
+}
+
+</code></pre><h2 id="微信浏览器不能使用window-location-reload-成功刷新"><a href="#微信浏览器不能使用window-location-reload-成功刷新" aria-hidden="true" class="header-anchor">#</a> 微信浏览器不能使用window.location.reload()成功刷新</h2><pre class="language-text"><code>项目：《招生宝》
+时间：2017年12月7日
+问题：移动端微信浏览器使用window.location.reload()刷新页面不管用
+描述：location.reload()方法是重新加载当前文档，由于微信缓存问题,reload只是从缓存中装载文档，导致使用window.location.reload()不能成功刷新，所以使用href属性来使浏览器读取并显示新的url内容
+解决办法： 使用window.location.href = window.location.href + 时间戳来更新当前url内容
+关键代码：
+window.location.href = this.updateUrl(window.location.href)
+
+// 解决微信浏览器使用window.location.reload()刷新页面无效问题
+  updateUrl(url, key) {
+    key = (key || 't') + '=' // 默认是&quot;t&quot;
+    var reg = new RegExp(key + '\\d+') // 正则：t=1472286066028
+    var timestamp = +new Date()
+    if (url.indexOf(key) &gt; -1) { // 有时间戳，直接更新
+      return url.replace(reg, key + timestamp)
+    } else { // 没有时间戳，加上时间戳
+      if (url.indexOf('?') &gt; -1) {
+        var urlArr = url.split('?')
+        if (urlArr[1]) {
+          return urlArr[0] + '?' + key + timestamp + '&amp;' + urlArr[1]
+        } else {
+          return urlArr[0] + '?' + key + timestamp
+        }
+      } else {
+        if (url.indexOf('#') &gt; -1) {
+          return url.split('#')[0] + '?' + key + timestamp + location.hash
+        } else {
+          return url + '?' + key + timestamp
+        }
+      }
+    }
+  }
+},
+
+</code></pre><h2 id="vue中执行对dom进行操作的js代码应该放在vue-nexttick-中"><a href="#vue中执行对dom进行操作的js代码应该放在vue-nexttick-中" aria-hidden="true" class="header-anchor">#</a> vue中执行对dom进行操作的js代码应该放在Vue.nextTick()中</h2><pre class="language-text"><code>项目：《招生宝》
+时间：2017年12月7日
+问题1：搜索学生后搜索页和再返回列表页后每个第一个“确认为我的学生”按钮处样式都有问题
+描述1：因为当订单处于“同意撤消”和“确认学生”时都是有边框的样式，而&quot;已确认&quot;时状态样式不一样，此处用了一标志flag判断，flag为true时就加class名&quot;confirmed&quot;，正常列表中第一个为“已确认”,已经给元素加了class名，当搜索时虽然flag为false，没有走赋class名的条件语句 ，但也没有去掉class名的分支条件.
+解决办法1：加上如果flag为flase时去掉class名的分支语句
+
+问题2：用this.refs.btns[index].className报错
+描述2：在vue中执行对dom进行操作的js代码应该放在Vue.nextTick()中，
+Vue.nextTick()是在下次DOM更新循环结束之后执行回调。在修改数据后立即使用这个方法，这样回调函数在dom更新完之后就会被调用.
+即需要使用随数据改变而改变的dom结构的操作都应该放在Vue.nextTick()中,
+
+正确代码：
+if (flag) {
+  this.nextTick(() =&gt; {
+    this.refs.btns[index].className
+    })
+}
+
+</code></pre><h2 id="vue-dom更新updated"><a href="#vue-dom更新updated" aria-hidden="true" class="header-anchor">#</a> vue dom更新updated</h2><pre class="language-text"><code>项目：《趣学君》
+时间：2017年12月22日
+问题：dom更新时未执行里边的方法
+描述：dom更新时的方法应该是updated,而不是update，实例创建完成后（挂载阶段还没开始）事件是created,不是create
+
+</code></pre></div><!----><div class="content page-nav"><p class="inner"><span class="prev">
+        ← <a href="/problem/201711.html" class="prev">
+          201711
+        </a></span><span class="next"><a href="/problem/201801.html">
+          201801
+        </a> →
+      </span></p></div></div></div></div>
+    <script src="/assets/js/39.a907d374.js" defer></script><script src="/assets/js/app.8cda3e1e.js" defer></script>
+  </body>
+</html>

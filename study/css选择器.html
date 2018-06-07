@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>霍梦林的个人博客 | [attribute]选择器 用于选取带有指定属性的元素</title>
+    <meta name="description" content="Just playing around">
+    
+    
+    <link rel="preload" href="/assets/css/45.styles.1e8d81e3.css" as="style"><link rel="preload" href="/assets/js/app.8cda3e1e.js" as="script"><link rel="preload" href="/assets/js/26.504aac1a.js" as="script"><link rel="prefetch" href="/assets/js/22.c7c99713.js"><link rel="prefetch" href="/assets/js/0.61024633.js"><link rel="prefetch" href="/assets/js/1.d5e0e0b1.js"><link rel="prefetch" href="/assets/js/2.5dd7926e.js"><link rel="prefetch" href="/assets/js/3.f8749a19.js"><link rel="prefetch" href="/assets/js/4.6311a437.js"><link rel="prefetch" href="/assets/js/5.373f6562.js"><link rel="prefetch" href="/assets/js/6.8011ad50.js"><link rel="prefetch" href="/assets/js/7.48a53add.js"><link rel="prefetch" href="/assets/js/8.97fb2bbb.js"><link rel="prefetch" href="/assets/js/9.ba2fab2c.js"><link rel="prefetch" href="/assets/js/10.09ff9892.js"><link rel="prefetch" href="/assets/js/11.9eae7453.js"><link rel="prefetch" href="/assets/js/12.ddaa1892.js"><link rel="prefetch" href="/assets/js/13.bded95c0.js"><link rel="prefetch" href="/assets/js/14.f95a8969.js"><link rel="prefetch" href="/assets/js/15.bd65339c.js"><link rel="prefetch" href="/assets/js/16.46869c30.js"><link rel="prefetch" href="/assets/js/17.55258bc9.js"><link rel="prefetch" href="/assets/js/18.7606ca85.js"><link rel="prefetch" href="/assets/js/19.ed014520.js"><link rel="prefetch" href="/assets/js/20.f5e9fce8.js"><link rel="prefetch" href="/assets/js/21.7798d633.js"><link rel="prefetch" href="/assets/js/23.a13caa11.js"><link rel="prefetch" href="/assets/js/24.fdf67551.js"><link rel="prefetch" href="/assets/js/25.1a5dc081.js"><link rel="prefetch" href="/assets/js/27.be80cda2.js"><link rel="prefetch" href="/assets/js/28.6fd82bb5.js"><link rel="prefetch" href="/assets/js/29.8833da62.js"><link rel="prefetch" href="/assets/js/30.3cbcb4ec.js"><link rel="prefetch" href="/assets/js/31.eec87b3d.js"><link rel="prefetch" href="/assets/js/32.f16b89ad.js"><link rel="prefetch" href="/assets/js/33.0c2aa20b.js"><link rel="prefetch" href="/assets/js/34.dc6f2133.js"><link rel="prefetch" href="/assets/js/35.d9856754.js"><link rel="prefetch" href="/assets/js/36.ff458ef4.js"><link rel="prefetch" href="/assets/js/37.601172ff.js"><link rel="prefetch" href="/assets/js/38.6dcc66bd.js"><link rel="prefetch" href="/assets/js/39.a907d374.js"><link rel="prefetch" href="/assets/js/40.bad0854c.js"><link rel="prefetch" href="/assets/js/41.c6497027.js"><link rel="prefetch" href="/assets/js/42.90031833.js"><link rel="prefetch" href="/assets/js/43.c068d093.js"><link rel="prefetch" href="/assets/js/44.4510e090.js">
+    <link rel="stylesheet" href="/assets/css/45.styles.1e8d81e3.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div><a href="/" class="home-link router-link-active"><!----><span class="site-name">
+      霍梦林的个人博客
+    </span></a><div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""><!----></div><nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">Home</a></div><div class="nav-item"><a href="/problem/" class="nav-link">Problem</a></div><div class="nav-item"><a href="/study/" class="nav-link router-link-active">Study</a></div><div class="nav-item"><a href="http://blog.csdn.net/weixin_38318244/" target="_blank" rel="noopener noreferrer" class="nav-link">CSDN</a></div><div class="nav-item"><a href="https://github.com/momo-0902" target="_blank" rel="noopener noreferrer" class="nav-link">Github</a></div><!----></nav></div></header><div class="sidebar-mask"></div><div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">Home</a></div><div class="nav-item"><a href="/problem/" class="nav-link">Problem</a></div><div class="nav-item"><a href="/study/" class="nav-link router-link-active">Study</a></div><div class="nav-item"><a href="http://blog.csdn.net/weixin_38318244/" target="_blank" rel="noopener noreferrer" class="nav-link">CSDN</a></div><div class="nav-item"><a href="https://github.com/momo-0902" target="_blank" rel="noopener noreferrer" class="nav-link">Github</a></div><!----></nav><ul class="sidebar-links"><li><a href="/study/" class="sidebar-link">学习笔记</a></li><li><a href="/study/axios.html" class="sidebar-link">1.axios</a></li><li><a href="/study/document.html" class="sidebar-link">2.document</a></li><li><a href="/study/css.html" class="active sidebar-link">3.css</a></li><li><a href="/study/css选择器.html" class="active sidebar-link">4.css选择器</a></li><li><a href="/study/flex.html" class="sidebar-link">5.flex</a></li><li><a href="/study/git.html" class="sidebar-link">6.git</a></li><li><a href="/study/html.html" class="sidebar-link">7.html</a></li><li><a href="/study/http.html" class="sidebar-link">8.http</a></li><li><a href="/study/input.html" class="sidebar-link">9.input</a></li><li><a href="/study/js语言基础.html" class="sidebar-link">10.js语言基础</a></li><li><a href="/study/RSA加密.html" class="sidebar-link">12.RSA加密</a></li><li><a href="/study/vue-router.html" class="sidebar-link">13.vue-router</a></li><li><a href="/study/vue.html" class="sidebar-link">14.vue</a></li><li><a href="/study/vuex.html" class="sidebar-link">15.vuex</a></li><li><a href="/study/vuePress.html" class="sidebar-link">16.vuePress</a></li><li><a href="/study/zepto.html" class="sidebar-link">17.zepto</a></li><li><a href="/study/代码逻辑优化.html" class="sidebar-link">18.代码逻辑优化</a></li><li><a href="/study/判断是否滚动到页面底部.html" class="sidebar-link">19.判断是否滚动到页面底部</a></li><li><a href="/study/找错误原因.html" class="sidebar-link">20.找错误原因</a></li><li><a href="/study/本地缓存.html" class="sidebar-link">21.本地缓存</a></li><li><a href="/study/算法.html" class="sidebar-link">22.算法</a></li><li><a href="/study/vue使用事件委托实现手风琴.html" class="sidebar-link">23.vue使用事件委托实现手风琴</a></li><li><a href="/study/generator.html" class="sidebar-link">24.异步编程-generator</a></li><li><a href="/study/抓包调试工具.html" class="sidebar-link">25.抓包调试工具</a></li><li><a href="/study/art-template.html" class="sidebar-link">26.art-template</a></li><li><a href="/study/bootstrap-datepicker.html" class="sidebar-link">27.bootstrap-datepicker</a></li><li><a href="/study/模拟form提交表单.html" class="sidebar-link">28.模拟form提交表单</a></li><li><a href="/study/算法.html" class="sidebar-link">29.算法小例子</a></li><li><a href="/study/echarts封装及接口数据渲染图表.html" class="sidebar-link">30.echarts封装及数据渲染</a></li><li><a href="/study/返回某个月的某个星期几.html" class="sidebar-link">31.返回某个月的某个星期几</a></li><li><a href="/study/防止接口重复请求.html" class="sidebar-link">32.防止接口重复请求</a></li><li><a href="/study/table.html" class="sidebar-link">33.table的操作</a></li><li><a href="/study/暂未分类.html" class="sidebar-link">34.暂未分类</a></li></ul></div><div class="page"><div class="content"><h4 id="attribute-选择器-用于选取带有指定属性的元素"><a href="#attribute-选择器-用于选取带有指定属性的元素" aria-hidden="true" class="header-anchor">#</a> [attribute]选择器 用于选取带有指定属性的元素</h4><pre class="language-text"><code>a[target]选取带有target属性的a标签
+</code></pre><h4 id="attribute-value-选取带有指定属性和值的元素"><a href="#attribute-value-选取带有指定属性和值的元素" aria-hidden="true" class="header-anchor">#</a> [attribute = value] 选取带有指定属性和值的元素</h4><pre class="language-text"><code>a[taret = _blank]
+</code></pre><h4 id="attribute-value-选取属性值中包含指定词汇的元素"><a href="#attribute-value-选取属性值中包含指定词汇的元素" aria-hidden="true" class="header-anchor">#</a> [attribute~=value] 选取属性值中包含指定词汇的元素</h4><pre class="language-text"><code>[class~=flower]
+//选取的指定词汇要是作为单独的属性值才可以被找到
+&lt;div class=&quot;flower Ht&quot;&gt;&lt;/div&gt;
+//并不是指这种包含，这种找不到
+&lt;div class=&quot;flowerHt&quot;&gt;&lt;/div&gt;
+</code></pre><h4 id="attribute-value-选取属性值以指定值开头的元素"><a href="#attribute-value-选取属性值以指定值开头的元素" aria-hidden="true" class="header-anchor">#</a> [attribute|=value] 选取属性值以指定值开头的元素</h4><pre class="language-text"><code>[class|=de]
+//选取的指定词汇必须是只以此词汇或者以此词汇+&quot;-&quot;的属性值
+&lt;div class=&quot;de&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;de-lang&quot;&gt;&lt;/div&gt;
+//而不是连接起来作为整体值中以此词汇开头的,这种找不到
+&lt;div class=&quot;delang&quot;&gt;&lt;/div&gt;
+</code></pre><h4 id="link-选择所有未被访问的链接"><a href="#link-选择所有未被访问的链接" aria-hidden="true" class="header-anchor">#</a> :link 选择所有未被访问的链接</h4><h4 id="visited-选择所有已被访问的链接"><a href="#visited-选择所有已被访问的链接" aria-hidden="true" class="header-anchor">#</a> :visited 选择所有已被访问的链接</h4><h4 id="active-选择活动链接-鼠标点击时成为激活"><a href="#active-选择活动链接-鼠标点击时成为激活" aria-hidden="true" class="header-anchor">#</a> :active 选择活动链接,(鼠标点击时成为激活)</h4><h4 id="hover-鼠标滑过链接时"><a href="#hover-鼠标滑过链接时" aria-hidden="true" class="header-anchor">#</a> :hover 鼠标滑过链接时</h4><h4 id="focus-选择获得焦点的元素"><a href="#focus-选择获得焦点的元素" aria-hidden="true" class="header-anchor">#</a> :focus 选择获得焦点的元素</h4><pre class="language-text"><code>input:focus {
+  color: #0f0;
+}
+</code></pre><h4 id="first-letter-选取每个元素的首字母"><a href="#first-letter-选取每个元素的首字母" aria-hidden="true" class="header-anchor">#</a> :first-letter 选取每个元素的首字母</h4><pre class="language-text"><code>p.en-us:first-letter {
+  font-size: 23px;
+}
+</code></pre><h4 id="first-line-选取每个元素的第一行"><a href="#first-line-选取每个元素的第一行" aria-hidden="true" class="header-anchor">#</a> :first-line 选取每个元素的第一行</h4><pre class="language-text"><code>p.en-us:first-line {
+  background-color: red;
+}
+</code></pre><h4 id="first-child-选择属于其父元素的首个子元素的指定选择器"><a href="#first-child-选择属于其父元素的首个子元素的指定选择器" aria-hidden="true" class="header-anchor">#</a> :first-child 选择属于其父元素的首个子元素的指定选择器</h4><pre class="language-text"><code>//选取属于其父元素的首个子元素的每个&lt;p&gt;元素(总是选取其父元素中的第一个p元素)
+&lt;body&gt;
+  &lt;p&gt;我会被选中&lt;/p&gt;
+  &lt;div&gt;
+    &lt;p&gt;我也会被选中&lt;/p&gt;
+    &lt;p我不会被选中&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+//选取每个p元素中的每个i元素，其中p元素是其子元素中的第一个子元素
+p:first-child i {}
+//选择父元素下边的首个子元素
+ul&gt;:first-child {}
+div&gt;:first-child {}
+</code></pre><h4 id="before-在指定元素前插入内容-内部插入-使用content-还可以定义样式"><a href="#before-在指定元素前插入内容-内部插入-使用content-还可以定义样式" aria-hidden="true" class="header-anchor">#</a> :before 在指定元素前插入内容(内部插入),使用content,还可以定义样式</h4><h4 id="after-在指定元素后插入内容-内部插入-使用content-还可以定义样式"><a href="#after-在指定元素后插入内容-内部插入-使用content-还可以定义样式" aria-hidden="true" class="header-anchor">#</a> :after 在指定元素后插入内容(内部插入),使用content,还可以定义样式</h4><pre class="language-text"><code>p:before {
+  content: &quot;使用我插入内容 &quot;;
+  color: red;
+  font-size: 15px;
+}
+</code></pre><h4 id="lang-language-选取带有以指定值开头的lang属性元素"><a href="#lang-language-选取带有以指定值开头的lang属性元素" aria-hidden="true" class="header-anchor">#</a> :lang(language)选取带有以指定值开头的lang属性元素</h4><pre class="language-text"><code>//此处规则与[attribute|=value]处规则一样
+</code></pre><h4 id="element1-element2-选取相同父元素中前边有element1元素的每个element2元素-范围是包含element2元素的父元素内"><a href="#element1-element2-选取相同父元素中前边有element1元素的每个element2元素-范围是包含element2元素的父元素内" aria-hidden="true" class="header-anchor">#</a> element1~element2 选取相同父元素中前边有element1元素的每个element2元素,范围是包含element2元素的父元素内</h4><pre class="language-text"><code>p~ul {
+  background: red;
+}
+</code></pre><h4 id="attribute-value-选取某属性值以指定值开头的元素"><a href="#attribute-value-选取某属性值以指定值开头的元素" aria-hidden="true" class="header-anchor">#</a> [attribute^=value] 选取某属性值以指定值开头的元素</h4><h4 id="attribute￥-value-选取某属性值以指定值结尾的元素"><a href="#attribute￥-value-选取某属性值以指定值结尾的元素" aria-hidden="true" class="header-anchor">#</a> [attribute￥=value] 选取某属性值以指定值结尾的元素</h4><h4 id="attribute-value-选取某属性值包含指定值的元素"><a href="#attribute-value-选取某属性值包含指定值的元素" aria-hidden="true" class="header-anchor">#</a> [attribute^=value] 选取某属性值包含指定值的元素</h4><pre class="language-text"><code>[class=&quot;test&quot;] {}
+//此处以某字符开头/结尾/包含字符可以是宽松条件的，不必作为单独的属性值或以短横线分隔
+&lt;div class=&quot;test&quot;&gt;我会被选中&lt;/div&gt;
+&lt;p class=&quot;testtest&quot;&gt;我们也会被选中&lt;/div&gt;
+&lt;p class=&quot;test_test&quot;&gt;我们也会被选中&lt;/div&gt;
+&lt;p class=&quot;test-test&quot;&gt;我们也会被选中&lt;/div&gt;
+</code></pre><h4 id="first-of-type-选择匹配属于其父元素的特定类型的首个子元素的每个元素"><a href="#first-of-type-选择匹配属于其父元素的特定类型的首个子元素的每个元素" aria-hidden="true" class="header-anchor">#</a> :first-of-type 选择匹配属于其父元素的特定类型的首个子元素的每个元素</h4><pre class="language-text"><code>div:first-of-type 选择父元素的首个div元素
+div:first-of-type 选择父元素下的首个div下边的p元素
+//如果有嵌套元素，则选择每个匹配元素(即第一个元素)下的每个元素
+&lt;div&gt;我会被选择&lt;/div&gt;
+&lt;div&gt;
+  &lt;div&gt;我也会被选择&gt;
+&lt;/div&gt;
+</code></pre><h4 id="last-of-type选择匹配属于其父元素的特定类型的最后一个子元素的每个元素"><a href="#last-of-type选择匹配属于其父元素的特定类型的最后一个子元素的每个元素" aria-hidden="true" class="header-anchor">#</a> :last-of-type选择匹配属于其父元素的特定类型的最后一个子元素的每个元素</h4><h4 id="only-of-type选择匹配属于其父元素的特定类型的唯一子元素的每个元素，即要匹配的元素是其父元素中唯一类型子元素"><a href="#only-of-type选择匹配属于其父元素的特定类型的唯一子元素的每个元素，即要匹配的元素是其父元素中唯一类型子元素" aria-hidden="true" class="header-anchor">#</a> :only-of-type选择匹配属于其父元素的特定类型的唯一子元素的每个元素，即要匹配的元素是其父元素中唯一类型子元素</h4><pre class="language-text"><code>p:only-of-type{}
+&lt;div&gt;
+  &lt;p&gt;我会被选中&lt;/p&gt;
+  &lt;span&gt;我不是p类型,所以上边p会被选中&lt;span&gt;
+&lt;/div&gt;
+&lt;div&gt;
+  &lt;p&gt;我也会被选中&lt;/p&gt;
+&lt;/div&gt;
+&lt;div&gt;
+  &lt;p&gt;我们不会被选中&lt;/p&gt;
+  &lt;p&gt;我们不会被选中&lt;/p&gt;
+&lt;/div&gt;
+</code></pre><h4 id="only-child-匹配属于其父元素的唯一子元素的每个元素，即要匹配的元素是其父元素的唯一子元素"><a href="#only-child-匹配属于其父元素的唯一子元素的每个元素，即要匹配的元素是其父元素的唯一子元素" aria-hidden="true" class="header-anchor">#</a> :only-child 匹配属于其父元素的唯一子元素的每个元素，即要匹配的元素是其父元素的唯一子元素</h4><pre class="language-text"><code>&lt;div&gt;
+  &lt;p&gt;我会被选中&lt;/p&gt;
+&lt;/div&gt;
+&lt;div&gt;
+  &lt;p&gt;我不会被选中&lt;/p&gt;
+  &lt;p&gt;因为我也是p元素，上边的并不是唯一子元素&lt;/p&gt;
+&lt;/div&gt;
+</code></pre><h4 id="nth-child-n-匹配属于其父元素的第n个子元素，无论元素类型，n从1开始计数"><a href="#nth-child-n-匹配属于其父元素的第n个子元素，无论元素类型，n从1开始计数" aria-hidden="true" class="header-anchor">#</a> :nth-child(n)匹配属于其父元素的第n个子元素，无论元素类型，n从1开始计数</h4><h5 id="p-nth-child-1"><a href="#p-nth-child-1" aria-hidden="true" class="header-anchor">#</a> p:nth-child(1)</h5><pre class="language-text"><code>//如果祖先父元素中先包含匹配元素，但匹配元素同级中不包含嵌套元素，则每一个嵌套元素中的第n个子元素都会被选中，
+&lt;p&gt;我会被选中&lt;/p&gt;
+&lt;div&gt;
+  &lt;p&gt;我也会被选中&lt;/p&gt;
+&lt;/div&gt;
+&lt;div&gt;
+  &lt;p&gt;我也会被选中&lt;/p&gt;
+&lt;/div&gt;
+//如果祖先父元素中没有先包含匹配元素，则只匹配嵌套父元素中的第n个子元素
+&lt;div&gt;
+  &lt;p&gt;我也会被选中&lt;/p&gt;
+&lt;/div&gt;
+&lt;div&gt;
+  &lt;p&gt;我也会被选中&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;我不会被选中，因为前边已经有p元素了，我并不是第一个&lt;/p&gt;
+</code></pre><h5 id="p-nth-child-odd-选择所有偶数p"><a href="#p-nth-child-odd-选择所有偶数p" aria-hidden="true" class="header-anchor">#</a> p:nth-child(odd) 选择所有偶数p</h5><h5 id="p-nth-child-even-选择所有奇数p"><a href="#p-nth-child-even-选择所有奇数p" aria-hidden="true" class="header-anchor">#</a> p:nth-child(even) 选择所有奇数p</h5><h5 id="p-nth-child-3n-1-选择所有3的倍数-1的p元素-4-7-10"><a href="#p-nth-child-3n-1-选择所有3的倍数-1的p元素-4-7-10" aria-hidden="true" class="header-anchor">#</a> p:nth-child(3n+1) 选择所有3的倍数+1的p元素(4,7,10...)</h5><h4 id="nth-last-child-n-选择倒数第几个匹配的元素"><a href="#nth-last-child-n-选择倒数第几个匹配的元素" aria-hidden="true" class="header-anchor">#</a> :nth-last-child(n) 选择倒数第几个匹配的元素</h4><h4 id="nth-of-type-n-选择匹配属于其父元素的特定类型的第n个元素的每个元素"><a href="#nth-of-type-n-选择匹配属于其父元素的特定类型的第n个元素的每个元素" aria-hidden="true" class="header-anchor">#</a> :nth-of-type(n) 选择匹配属于其父元素的特定类型的第n个元素的每个元素</h4><pre class="language-text"><code>exp:
+p:nth-of-type(2)
+&lt;p&gt;我不会被选中&lt;/p&gt;
+&lt;p&gt;我会被选中，因为我是第二个p&lt;/p&gt;
+&lt;div&gt;
+</code></pre><h4 id="nth-last-of-type-n-选择匹配属于其父元素的特定类型的倒数第n个元素的每个元素"><a href="#nth-last-of-type-n-选择匹配属于其父元素的特定类型的倒数第n个元素的每个元素" aria-hidden="true" class="header-anchor">#</a> :nth-last-of-type(n) 选择匹配属于其父元素的特定类型的倒数第n个元素的每个元素</h4><h4 id="last-child-匹配属于其父元素的最后一个元素的每个元素"><a href="#last-child-匹配属于其父元素的最后一个元素的每个元素" aria-hidden="true" class="header-anchor">#</a> :last-child 匹配属于其父元素的最后一个元素的每个元素</h4><h4 id="root匹配文档根元素，在html中根元素永远是html元素"><a href="#root匹配文档根元素，在html中根元素永远是html元素" aria-hidden="true" class="header-anchor">#</a> :root匹配文档根元素，在html中根元素永远是html元素</h4><h4 id="empty匹配没有子元素-包括文本节点-的每个元素"><a href="#empty匹配没有子元素-包括文本节点-的每个元素" aria-hidden="true" class="header-anchor">#</a> :empty匹配没有子元素(包括文本节点)的每个元素</h4><pre class="language-text"><code>exp:
+p:empty{} 匹配没有子元素或者文本内容的每个p元素
+</code></pre><h4 id="target-选取当前活动的目标元素"><a href="#target-选取当前活动的目标元素" aria-hidden="true" class="header-anchor">#</a> :target 选取当前活动的目标元素</h4><pre class="language-text"><code>exp:
+:target { color: red }
+&lt;a href=&quot;active&quot;&gt;点击跳转至内容&lt;a&gt;
+&lt;p id=&quot;#active&quot;&gt;我是活动的目标元素&lt;/p&gt;
+</code></pre><h4 id="enabled-匹配每个已启用的元素-多数用在表单上"><a href="#enabled-匹配每个已启用的元素-多数用在表单上" aria-hidden="true" class="header-anchor">#</a> :enabled 匹配每个已启用的元素(多数用在表单上)</h4><pre class="language-text"><code>exp:
+input[type=text]:enalbed {}
+</code></pre><h4 id="check匹配每个被选中的input元素-只用于单选按钮和复选框，只有opera支持此选择器"><a href="#check匹配每个被选中的input元素-只用于单选按钮和复选框，只有opera支持此选择器" aria-hidden="true" class="header-anchor">#</a> :check匹配每个被选中的input元素(只用于单选按钮和复选框，只有opera支持此选择器)</h4><h4 id="not-设置不是此元素的每个元素"><a href="#not-设置不是此元素的每个元素" aria-hidden="true" class="header-anchor">#</a> :not()设置不是此元素的每个元素</h4><h4 id="selection匹配被用户选取的部分，只能应用少量css属性：color-background-cursor-outline"><a href="#selection匹配被用户选取的部分，只能应用少量css属性：color-background-cursor-outline" aria-hidden="true" class="header-anchor">#</a> ::selection匹配被用户选取的部分，只能应用少量css属性：color background cursor outline</h4></div><!----><div class="content page-nav"><p class="inner"><span class="prev">
+        ← <a href="/study/css.html" class="prev">
+          3.css
+        </a></span><span class="next"><a href="/study/flex.html">
+          5.flex
+        </a> →
+      </span></p></div></div></div></div>
+    <script src="/assets/js/26.504aac1a.js" defer></script><script src="/assets/js/app.8cda3e1e.js" defer></script>
+  </body>
+</html>
