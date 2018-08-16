@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>霍梦林的个人博客 | vuex</title>
+    <meta name="description" content="Just playing around">
+    
+    
+    <link rel="preload" href="/assets/css/46.styles.b646c9c7.css" as="style"><link rel="preload" href="/assets/js/app.21af4b7a.js" as="script"><link rel="preload" href="/assets/js/1.de00d4e2.js" as="script"><link rel="prefetch" href="/assets/js/23.62bfb48a.js"><link rel="prefetch" href="/assets/js/0.ad434982.js"><link rel="prefetch" href="/assets/js/2.8e4568be.js"><link rel="prefetch" href="/assets/js/3.ba3de1c7.js"><link rel="prefetch" href="/assets/js/4.ed75d86a.js"><link rel="prefetch" href="/assets/js/5.f5b66771.js"><link rel="prefetch" href="/assets/js/6.ac2b7510.js"><link rel="prefetch" href="/assets/js/7.849df679.js"><link rel="prefetch" href="/assets/js/8.32604b3f.js"><link rel="prefetch" href="/assets/js/9.65cc79e2.js"><link rel="prefetch" href="/assets/js/10.bee2823d.js"><link rel="prefetch" href="/assets/js/11.dbec1204.js"><link rel="prefetch" href="/assets/js/12.4cc4f4b0.js"><link rel="prefetch" href="/assets/js/13.fb4a1834.js"><link rel="prefetch" href="/assets/js/14.d2671700.js"><link rel="prefetch" href="/assets/js/15.31de3449.js"><link rel="prefetch" href="/assets/js/16.357740a9.js"><link rel="prefetch" href="/assets/js/17.285d1748.js"><link rel="prefetch" href="/assets/js/18.924155d6.js"><link rel="prefetch" href="/assets/js/19.d96ed59a.js"><link rel="prefetch" href="/assets/js/20.67ee3641.js"><link rel="prefetch" href="/assets/js/21.3443a30e.js"><link rel="prefetch" href="/assets/js/22.15d6b2e5.js"><link rel="prefetch" href="/assets/js/24.bbcffed2.js"><link rel="prefetch" href="/assets/js/25.2d46b06d.js"><link rel="prefetch" href="/assets/js/26.18ff9f32.js"><link rel="prefetch" href="/assets/js/27.eb667acf.js"><link rel="prefetch" href="/assets/js/28.00a64dc0.js"><link rel="prefetch" href="/assets/js/29.0dd9e08c.js"><link rel="prefetch" href="/assets/js/30.356525db.js"><link rel="prefetch" href="/assets/js/31.b9ad12f5.js"><link rel="prefetch" href="/assets/js/32.bc18723d.js"><link rel="prefetch" href="/assets/js/33.395c2652.js"><link rel="prefetch" href="/assets/js/34.dc6f2133.js"><link rel="prefetch" href="/assets/js/35.cff13afc.js"><link rel="prefetch" href="/assets/js/36.e1ccc63a.js"><link rel="prefetch" href="/assets/js/37.87a3a50b.js"><link rel="prefetch" href="/assets/js/38.20975580.js"><link rel="prefetch" href="/assets/js/39.fe1ec382.js"><link rel="prefetch" href="/assets/js/40.0fa937cf.js"><link rel="prefetch" href="/assets/js/41.1dfcb875.js"><link rel="prefetch" href="/assets/js/42.f3ddae5b.js"><link rel="prefetch" href="/assets/js/43.c234813d.js"><link rel="prefetch" href="/assets/js/44.ee33685d.js"><link rel="prefetch" href="/assets/js/45.d7f97673.js">
+    <link rel="stylesheet" href="/assets/css/46.styles.b646c9c7.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div><a href="/" class="home-link router-link-active"><!----><span class="site-name">
+      霍梦林的个人博客
+    </span></a><div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""><!----></div><nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">Home</a></div><div class="nav-item"><a href="/problem/" class="nav-link">Problem</a></div><div class="nav-item"><a href="/study/" class="nav-link router-link-active">Study</a></div><div class="nav-item"><a href="http://blog.csdn.net/weixin_38318244/" target="_blank" rel="noopener noreferrer" class="nav-link">CSDN</a></div><div class="nav-item"><a href="https://github.com/momo-0902" target="_blank" rel="noopener noreferrer" class="nav-link">Github</a></div><!----></nav></div></header><div class="sidebar-mask"></div><div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">Home</a></div><div class="nav-item"><a href="/problem/" class="nav-link">Problem</a></div><div class="nav-item"><a href="/study/" class="nav-link router-link-active">Study</a></div><div class="nav-item"><a href="http://blog.csdn.net/weixin_38318244/" target="_blank" rel="noopener noreferrer" class="nav-link">CSDN</a></div><div class="nav-item"><a href="https://github.com/momo-0902" target="_blank" rel="noopener noreferrer" class="nav-link">Github</a></div><!----></nav><ul class="sidebar-links"><li><a href="/study/" class="sidebar-link">学习笔记</a></li><li><a href="/study/axios.html" class="sidebar-link">1.axios</a></li><li><a href="/study/document.html" class="sidebar-link">2.document</a></li><li><a href="/study/css.html" class="sidebar-link">3.css</a></li><li><a href="/study/css-selector.html" class="sidebar-link">4.css选择器</a></li><li><a href="/study/flex.html" class="sidebar-link">5.flex</a></li><li><a href="/study/git.html" class="sidebar-link">6.git</a></li><li><a href="/study/html.html" class="sidebar-link">7.html</a></li><li><a href="/study/http.html" class="sidebar-link">8.http</a></li><li><a href="/study/input.html" class="sidebar-link">9.input</a></li><li><a href="/study/js-basis.html" class="sidebar-link">10.js语言基础</a></li><li><a href="/study/RSA-encrypt.html" class="sidebar-link">12.RSA加密</a></li><li><a href="/study/vue-router.html" class="sidebar-link">13.vue-router</a></li><li><a href="/study/vue.html" class="active sidebar-link">14.vue</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/study/vuex.html#vue如何使用disabled" class="sidebar-link">vue如何使用disabled</a></li><li class="sidebar-sub-header"><a href="/study/vuex.html#mixins" class="sidebar-link">mixins</a></li><li class="sidebar-sub-header"><a href="/study/vuex.html#vue-将选中项写入json备用" class="sidebar-link">vue 将选中项写入json备用</a></li></ul></li><li><a href="/study/vuex.html" class="active sidebar-link">15.vuex</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/study/vuex.html#vuex-getter" class="sidebar-link">vuex-getter</a></li><li class="sidebar-sub-header"><a href="/study/vuex.html#vuex简单示例" class="sidebar-link">vuex简单示例</a></li></ul></li><li><a href="/study/vuePress.html" class="sidebar-link">16.vuePress</a></li><li><a href="/study/zepto.html" class="sidebar-link">17.zepto</a></li><li><a href="/study/code-optimization.html" class="sidebar-link">18.代码逻辑优化</a></li><li><a href="/study/scroll-page-bottom.html" class="sidebar-link">19.判断是否滚动到页面底部</a></li><li><a href="/study/find-the-cause-of-error.html" class="sidebar-link">20.找错误原因</a></li><li><a href="/study/local-cache.html" class="sidebar-link">21.本地缓存</a></li><li><a href="/study/algorithm.html" class="sidebar-link">22.算法</a></li><li><a href="/study/vue-accordion.html" class="sidebar-link">23.vue使用事件委托实现手风琴</a></li><li><a href="/study/generator.html" class="sidebar-link">24.异步编程-generator</a></li><li><a href="/study/capture-debugging-tool.html" class="sidebar-link">25.抓包调试工具</a></li><li><a href="/study/art-template.html" class="sidebar-link">26.art-template</a></li><li><a href="/study/bootstrap-datepicker.html" class="sidebar-link">27.bootstrap-datepicker</a></li><li><a href="/study/simulation-form-submit.html" class="sidebar-link">28.模拟form提交表单</a></li><li><a href="/study/echarts.html" class="sidebar-link">29.echarts封装渲染和部分配置</a></li><li><a href="/study/return-specific-date.html" class="sidebar-link">30.返回某个月的某个星期几</a></li><li><a href="/study/prevent-duplicate-request.html" class="sidebar-link">31.防止接口重复请求</a></li><li><a href="/study/table.html" class="sidebar-link">32.table的操作</a></li><li><a href="/study/not-yet-classified.html" class="sidebar-link">33.暂未分类</a></li></ul></div><div class="page"><div class="content"><h1 id="vuex"><a href="#vuex" aria-hidden="true" class="header-anchor">#</a> vuex</h1><h2 id="vuex-getter"><a href="#vuex-getter" aria-hidden="true" class="header-anchor">#</a> vuex-getter</h2><h3 id="vuex中的getter使用属性访问和使用方法访问，但此处都是指的通过getter的返回值来访问，即返回值是属性或方法。"><a href="#vuex中的getter使用属性访问和使用方法访问，但此处都是指的通过getter的返回值来访问，即返回值是属性或方法。" aria-hidden="true" class="header-anchor">#</a> vuex中的getter使用属性访问和使用方法访问，但此处都是指的通过getter的返回值来访问，即返回值是属性或方法。</h3><p>getter接收state作为其第一个参数，调用时vuex会自动执行最外层函数,即state这一层。
+当通过属性访问时，getter是作为vue响应式系统的一部分缓存的，即只要是返回对象就会有缓存，除非state发生了变化</p><pre class="language-text"><code>getters: {
+  //引自doneTodosCount返回的不是外层(state,getters)函数，而是return后边的返回值
+  doneTodosCount: (state, getters) =&gt; {
+    return getters.doneTodos.length
+  }
+}
+computed: {
+  doneTodosCount() {
+    return this.$store.getters.doneTodosCount
+  }
+}
+</code></pre><p>而当通过方法访问时，getter每次都会重新进行调用，不会缓存结果</p><pre class="language-text"><code>getters: {
+  // 此处getTodoById同理，返回的不是外层(state)函数，而是(id)内层函数，所以接收的时候也是(id)函数来接收参数
+  getTodoById: (state) =&gt; (id) =&gt; {
+    return state.todos.find(todo =&gt; todo.id === id)
+  }
+}
+此处箭头函数普通形式为
+getTodoById: function(state) {
+  return function(id) {
+    return state.todos.find(function(todo) {
+      return tood.id === id
+    })
+  }
+}
+调用时使用
+store.getters.getTodoById(2)
+此处2直接传给(state) =&gt; (id)的内层函数(id)
+</code></pre><h2 id="vuex简单示例"><a href="#vuex简单示例" aria-hidden="true" class="header-anchor">#</a> vuex简单示例</h2><h3 id="参照https-www-cnblogs-com-ghostwu-p-7521097-html"><a href="#参照https-www-cnblogs-com-ghostwu-p-7521097-html" aria-hidden="true" class="header-anchor">#</a> (参照<a href="https://www.cnblogs.com/ghostwu/p/7521097.html" target="_blank" rel="noopener noreferrer">https://www.cnblogs.com/ghostwu/p/7521097.html</a>)</h3><h3 id="一、使用vue-cli完成环境搭建"><a href="#一、使用vue-cli完成环境搭建" aria-hidden="true" class="header-anchor">#</a> 一、使用vue-cli完成环境搭建</h3><pre class="language-text"><code>1.npm install --global vue-cli 安装命令行工具
+2.vue init webpack vue-demo 生成一个webpack项目,名字为vue-demo
+3.cd vue-demo
+4.npm install
+5.npm run dev
+
+</code></pre><h3 id="二、删除helloworld组件，将app-vue与router文件都变成原始状态"><a href="#二、删除helloworld组件，将app-vue与router文件都变成原始状态" aria-hidden="true" class="header-anchor">#</a> 二、删除helloworld组件，将App.vue与router文件都变成原始状态</h3><p>App.vue</p><pre class="language-text"><code>&lt;template&gt;
+  &lt;div id=&quot;app&quot;&gt;&lt;/div&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+  export default {
+    name: 'app'
+  }
+&lt;/script&gt;
+</code></pre><p>router-index.js</p><pre class="language-text"><code>import Vue from 'vue'
+import Router from 'vue-router'
+
+Vue.use(Router)
+
+//创建router实例，配置routes参数
+export default new Router({
+  routes: [
+  {
+    path: '/'
+  }
+  ]
+})
+</code></pre><h3 id="三、npm-i-vuex-save-dev"><a href="#三、npm-i-vuex-save-dev" aria-hidden="true" class="header-anchor">#</a> 三、npm i vuex --save-dev</h3><h3 id="四、-在main-js中引入vuex，并注册store，这样就可以使用this-store来获得这个容器了"><a href="#四、-在main-js中引入vuex，并注册store，这样就可以使用this-store来获得这个容器了" aria-hidden="true" class="header-anchor">#</a> 四、 在main.js中引入vuex，并注册store，这样就可以使用this.$store来获得这个容器了</h3><p>main.js</p><pre class="language-text"><code>import Vue form 'vue'
+import App form './App'
+import router from './router'
+// 引入vuex
+import Vuex from 'vuex'
+// 引入store
+import store from './vuex/store'
+
+// 模块化打包系统中，使用vue.use来安装Vuex
+Vue.use(Vuex)
+
+// 阻止vue在启动时生成生产提示
+vue.config.productionTip = false
+
+//创建vue实例，将组件、路由、与store挂载到实例上
+new Vue({
+  el: '#app', // 替换页面中id为app的div元素
+  router, //挂载路由
+  store, // 注册store
+  template: '&lt;App/&gt;', // 告知页面这个组件用这样的标签来包裹着，并且使用它
+  components: { App } //告知当前页面想使用App这个组件
+})
+</code></pre><h3 id="五、创建store-js，用于存放所有的状态（改变的数据）"><a href="#五、创建store-js，用于存放所有的状态（改变的数据）" aria-hidden="true" class="header-anchor">#</a> 五、创建store.js，用于存放所有的状态（改变的数据）</h3><p>store.js</p><pre class="language-text"><code>import Vue from 'vue'
+import Vuex from 'vuex'
+
+Vue.use(Vuex)
+
+// 创建store，提供一个初始对象state，存放状态userName
+const store = new Vuex.Store({
+  state: {
+    userName: 'ghostwu'
+  }
+})
+
+export default store
+
+</code></pre><h3 id="六、将状态中的数据渲染到组件中"><a href="#六、将状态中的数据渲染到组件中" aria-hidden="true" class="header-anchor">#</a> 六、将状态中的数据渲染到组件中</h3><p>在components下创建组件Main.vue</p><pre class="language-text"><code>&lt;template&gt;
+ &lt;div&gt;{{myName}}&lt;/div&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+  export default {
+    name: 'Main',
+    // 通过计算属性获取存储在全局容器store中state保存的状态值
+    computed: {
+      myName() {
+        return this.$store.state.userName
+      }
+    }
+  }
+&lt;/script&gt;
+</code></pre><h3 id="七、在app-vue中引入组件main-vue"><a href="#七、在app-vue中引入组件main-vue" aria-hidden="true" class="header-anchor">#</a> 七、在app.vue中引入组件Main.vue</h3><p>app.vue</p><pre class="language-text"><code>&lt;template&gt;
+  // 此处div为绑定vue实例的div
+  &lt;div id=&quot;app&quot;&gt;
+    &lt;Mainc&gt;&lt;/Mainc&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+import Mainc from './components/Main.vue'
+
+export default {
+  name: 'app',
+  components: {
+    Mainc
+  }
+}
+&lt;/script&gt;
+</code></pre><h3 id="八、使用mutation改变状态"><a href="#八、使用mutation改变状态" aria-hidden="true" class="header-anchor">#</a> 八、使用mutation改变状态</h3><p>在vuex中，只有提交mutation才能改变状态，每个mutation都有一个字符串的事件类型（type)和一个回调函数,这个回调函数就是我们实际进行状态更改的地方，并且它会接收state作为第一个参数
+当触发事件类型（type)时，调用回调函数,使用store.commit方法</p><p>store.js</p><pre class="language-text"><code>const store = new Vuex.Store({
+  state: {
+    userName: 'ghostwu'
+  },
+  mutations: {
+    // 此处showUserName为事件类型（type)，并且它会接收state作为第一个参数，msg即为store.commit处传入的载荷(payload),需要使用header.vue中的点击事件来传递
+    showUserName(state, msg) {
+      // 回调函数
+      state.userName = msg
+    }
+  }
+})
+</code></pre><p>新建Header.vue</p><pre class="language-text"><code>&lt;template&gt;
+  &lt;div&gt;
+    &lt;input type=&quot;text&quot; v-model=&quot;msg&quot; /&gt;
+    &lt;input type=&quot;button&quot; @click=&quot;setName&quot; value=&quot;点我&quot; /&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+  export default {
+    name: 'Header',
+    data() {
+      return {
+        msg: ''
+      }
+    },
+    methods: {
+      setName() {
+        // 使用this.$store.commit 将载荷this.msg的值提交给showUserName
+        this.$store.commit('showUserName', this.msg)
+      }
+    }
+  }
+&lt;/script&gt;
+</code></pre></div><!----><div class="content page-nav"><p class="inner"><span class="prev">
+        ← <a href="/study/vue.html" class="prev">
+          14.vue
+        </a></span><span class="next"><a href="/study/vuePress.html">
+          16.vuePress
+        </a> →
+      </span></p></div></div></div></div>
+    <script src="/assets/js/1.de00d4e2.js" defer></script><script src="/assets/js/app.21af4b7a.js" defer></script>
+  </body>
+</html>

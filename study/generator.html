@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>霍梦林的个人博客 | 异步编程</title>
+    <meta name="description" content="Just playing around">
+    
+    
+    <link rel="preload" href="/assets/css/46.styles.b646c9c7.css" as="style"><link rel="preload" href="/assets/js/app.21af4b7a.js" as="script"><link rel="preload" href="/assets/js/18.924155d6.js" as="script"><link rel="prefetch" href="/assets/js/23.62bfb48a.js"><link rel="prefetch" href="/assets/js/0.ad434982.js"><link rel="prefetch" href="/assets/js/1.de00d4e2.js"><link rel="prefetch" href="/assets/js/2.8e4568be.js"><link rel="prefetch" href="/assets/js/3.ba3de1c7.js"><link rel="prefetch" href="/assets/js/4.ed75d86a.js"><link rel="prefetch" href="/assets/js/5.f5b66771.js"><link rel="prefetch" href="/assets/js/6.ac2b7510.js"><link rel="prefetch" href="/assets/js/7.849df679.js"><link rel="prefetch" href="/assets/js/8.32604b3f.js"><link rel="prefetch" href="/assets/js/9.65cc79e2.js"><link rel="prefetch" href="/assets/js/10.bee2823d.js"><link rel="prefetch" href="/assets/js/11.dbec1204.js"><link rel="prefetch" href="/assets/js/12.4cc4f4b0.js"><link rel="prefetch" href="/assets/js/13.fb4a1834.js"><link rel="prefetch" href="/assets/js/14.d2671700.js"><link rel="prefetch" href="/assets/js/15.31de3449.js"><link rel="prefetch" href="/assets/js/16.357740a9.js"><link rel="prefetch" href="/assets/js/17.285d1748.js"><link rel="prefetch" href="/assets/js/19.d96ed59a.js"><link rel="prefetch" href="/assets/js/20.67ee3641.js"><link rel="prefetch" href="/assets/js/21.3443a30e.js"><link rel="prefetch" href="/assets/js/22.15d6b2e5.js"><link rel="prefetch" href="/assets/js/24.bbcffed2.js"><link rel="prefetch" href="/assets/js/25.2d46b06d.js"><link rel="prefetch" href="/assets/js/26.18ff9f32.js"><link rel="prefetch" href="/assets/js/27.eb667acf.js"><link rel="prefetch" href="/assets/js/28.00a64dc0.js"><link rel="prefetch" href="/assets/js/29.0dd9e08c.js"><link rel="prefetch" href="/assets/js/30.356525db.js"><link rel="prefetch" href="/assets/js/31.b9ad12f5.js"><link rel="prefetch" href="/assets/js/32.bc18723d.js"><link rel="prefetch" href="/assets/js/33.395c2652.js"><link rel="prefetch" href="/assets/js/34.dc6f2133.js"><link rel="prefetch" href="/assets/js/35.cff13afc.js"><link rel="prefetch" href="/assets/js/36.e1ccc63a.js"><link rel="prefetch" href="/assets/js/37.87a3a50b.js"><link rel="prefetch" href="/assets/js/38.20975580.js"><link rel="prefetch" href="/assets/js/39.fe1ec382.js"><link rel="prefetch" href="/assets/js/40.0fa937cf.js"><link rel="prefetch" href="/assets/js/41.1dfcb875.js"><link rel="prefetch" href="/assets/js/42.f3ddae5b.js"><link rel="prefetch" href="/assets/js/43.c234813d.js"><link rel="prefetch" href="/assets/js/44.ee33685d.js"><link rel="prefetch" href="/assets/js/45.d7f97673.js">
+    <link rel="stylesheet" href="/assets/css/46.styles.b646c9c7.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div><a href="/" class="home-link router-link-active"><!----><span class="site-name">
+      霍梦林的个人博客
+    </span></a><div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""><!----></div><nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">Home</a></div><div class="nav-item"><a href="/problem/" class="nav-link">Problem</a></div><div class="nav-item"><a href="/study/" class="nav-link router-link-active">Study</a></div><div class="nav-item"><a href="http://blog.csdn.net/weixin_38318244/" target="_blank" rel="noopener noreferrer" class="nav-link">CSDN</a></div><div class="nav-item"><a href="https://github.com/momo-0902" target="_blank" rel="noopener noreferrer" class="nav-link">Github</a></div><!----></nav></div></header><div class="sidebar-mask"></div><div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">Home</a></div><div class="nav-item"><a href="/problem/" class="nav-link">Problem</a></div><div class="nav-item"><a href="/study/" class="nav-link router-link-active">Study</a></div><div class="nav-item"><a href="http://blog.csdn.net/weixin_38318244/" target="_blank" rel="noopener noreferrer" class="nav-link">CSDN</a></div><div class="nav-item"><a href="https://github.com/momo-0902" target="_blank" rel="noopener noreferrer" class="nav-link">Github</a></div><!----></nav><ul class="sidebar-links"><li><a href="/study/" class="sidebar-link">学习笔记</a></li><li><a href="/study/axios.html" class="sidebar-link">1.axios</a></li><li><a href="/study/document.html" class="sidebar-link">2.document</a></li><li><a href="/study/css.html" class="sidebar-link">3.css</a></li><li><a href="/study/css-selector.html" class="sidebar-link">4.css选择器</a></li><li><a href="/study/flex.html" class="sidebar-link">5.flex</a></li><li><a href="/study/git.html" class="sidebar-link">6.git</a></li><li><a href="/study/html.html" class="sidebar-link">7.html</a></li><li><a href="/study/http.html" class="sidebar-link">8.http</a></li><li><a href="/study/input.html" class="sidebar-link">9.input</a></li><li><a href="/study/js-basis.html" class="sidebar-link">10.js语言基础</a></li><li><a href="/study/RSA-encrypt.html" class="sidebar-link">12.RSA加密</a></li><li><a href="/study/vue-router.html" class="sidebar-link">13.vue-router</a></li><li><a href="/study/vue.html" class="sidebar-link">14.vue</a></li><li><a href="/study/vuex.html" class="sidebar-link">15.vuex</a></li><li><a href="/study/vuePress.html" class="sidebar-link">16.vuePress</a></li><li><a href="/study/zepto.html" class="sidebar-link">17.zepto</a></li><li><a href="/study/code-optimization.html" class="sidebar-link">18.代码逻辑优化</a></li><li><a href="/study/scroll-page-bottom.html" class="sidebar-link">19.判断是否滚动到页面底部</a></li><li><a href="/study/find-the-cause-of-error.html" class="sidebar-link">20.找错误原因</a></li><li><a href="/study/local-cache.html" class="sidebar-link">21.本地缓存</a></li><li><a href="/study/algorithm.html" class="sidebar-link">22.算法</a></li><li><a href="/study/vue-accordion.html" class="sidebar-link">23.vue使用事件委托实现手风琴</a></li><li><a href="/study/generator.html" class="active sidebar-link">24.异步编程-generator</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/study/generator.html#generator函数的错误处理" class="sidebar-link">generator函数的错误处理</a></li><li class="sidebar-sub-header"><a href="/study/generator.html#generator函数的用法" class="sidebar-link">generator函数的用法</a></li><li class="sidebar-sub-header"><a href="/study/generator.html#async是什么" class="sidebar-link">async是什么</a></li></ul></li><li><a href="/study/capture-debugging-tool.html" class="sidebar-link">25.抓包调试工具</a></li><li><a href="/study/art-template.html" class="sidebar-link">26.art-template</a></li><li><a href="/study/bootstrap-datepicker.html" class="sidebar-link">27.bootstrap-datepicker</a></li><li><a href="/study/simulation-form-submit.html" class="sidebar-link">28.模拟form提交表单</a></li><li><a href="/study/echarts.html" class="sidebar-link">29.echarts封装渲染和部分配置</a></li><li><a href="/study/return-specific-date.html" class="sidebar-link">30.返回某个月的某个星期几</a></li><li><a href="/study/prevent-duplicate-request.html" class="sidebar-link">31.防止接口重复请求</a></li><li><a href="/study/table.html" class="sidebar-link">32.table的操作</a></li><li><a href="/study/not-yet-classified.html" class="sidebar-link">33.暂未分类</a></li></ul></div><div class="page"><div class="content"><h1 id="异步编程"><a href="#异步编程" aria-hidden="true" class="header-anchor">#</a> 异步编程</h1><p>异步编程的目标就是怎样让它更像同步编程,所谓异步，简单说就是一个任务分成两段，先执行第一段，然后转而执行其他任务，等做好了准备，再回过头执行第二段。
+这种不连续执行的任务，就叫做异步。而连续的任务，就叫做同步。</p><h1 id="回调函数-callback-重新调用"><a href="#回调函数-callback-重新调用" aria-hidden="true" class="header-anchor">#</a> 回调函数--callback(重新调用)</h1><p>js语言对异步编程的实现，就是回调函数。所谓回调函数，就是把任务的第二段单独写在一个函数里面，等到重新执行这个任务的时候，就直接调用这个函数。</p><p>ex:</p><pre class="language-text"><code>// 此例中，第一个参数，'/etc/passwd'即为任务要执行的第一段，请求文件，当请求文件成功后，执行函数的第二个参数，即为任务的第二段。
+fs.readFile('/etc/passwd',function(err,data) {
+  if (err) throw error
+  alert(data)
+  })
+</code></pre><h1 id="promise"><a href="#promise" aria-hidden="true" class="header-anchor">#</a> Promise</h1><p>如果多个回调函数嵌套，代码不是纵向谝，而是横向发展(执行最外层回调函数的同时执行第二个回调函数。。。)，很快就会乱成一团，无法管理。</p><pre class="language-text"><code>fs.readFile(fileA, function(err, data) {
+  rs.readFile(fileB,function(err, data) {
+    ...
+    })
+  })
+</code></pre><p>promise对象可以理解为一次执行的异步操作，只
+promise为解决多个回调函数嵌套问题产生。允许将回调函数的横向加载，改成纵向加载，连续读取多个文件，按步骤执行，执行完上一下再执行下一个，写法如下：
+ex1:</p><pre class="language-text"><code>let myPromise = new Promise(function(resolve, reject) {
+  // 250秒后将promise状态变为成功
+  setTimeout(function() {
+    resolve('成功')
+  }),250
+})
+// 使用then方法返上述定义的mypromise对象,因为then方法返回一个新的promise对象，这个对象取决于onFulFilled状态（即then方法)的返回值，而在链式调用中，除第一个外每一个onFulFilled的入参都是上一个onFulFilled的返回值，如果不在then方法中返回值，那么再次调用时就是undefined.
+myPromise.then(function(message) {
+  alert('yee!' + message)
+  return myPromise
+}).then(function(message) {
+  alert('yee!' + message + 'again')
+  return myPromise
+})
+
+</code></pre><p>ex2:</p><pre class="language-text"><code>var readFile = require('fs-readfile-promise')
+readFile(fielA)
+// 当fileA文件读取成功后转成字符串打印
+.then(function(data) {
+  alert(data.toString())
+})
+// 执行完readFileA回调函数后再执行readFileB
+.then(function() {
+  return readFile(fileB)
+})
+// fileB读取成功后转成字符串打印
+.then(function() {
+  alert(data.toString())
+})
+</code></pre><h1 id="协程"><a href="#协程" aria-hidden="true" class="header-anchor">#</a> 协程</h1><p>协和意思是多个线程互相协作，完成异步任务。
+第一步，协程A开始执行。
+第二步，协程A执行到一半，进入暂停，执行权转移到协程By。
+第三步，（一段时间后）协和B交还执行权。
+第四步，协程A恢复执行。</p><p>协和遇到 yield命令就暂停，等到执行权返回，再从暂停的地方继续往后执行，它最大优点是写法非常像同步操作。、</p><h1 id="generator函数"><a href="#generator函数" aria-hidden="true" class="header-anchor">#</a> Generator函数</h1><h4 id="generator函数的数据交换"><a href="#generator函数的数据交换" aria-hidden="true" class="header-anchor">#</a> generator函数的数据交换</h4><p>generator函数是协程es6的实现 ，最大特点就是可以交出函数的执行权（即暂停执行）</p><pre class="language-text"><code>function* gen(x) {
+  var y = yield x + 2
+  return y
+}
+</code></pre><p>整个generator函数就是一个封装的异步任务，异步操作需要暂停的地方，都用yield声明，generator函数的执行方法如下：</p><pre class="language-text"><code>// 调用generator函数，返回一个内部指针（即遍历器）g，将1传到gen函数中
+var g = gen(1)
+g.next() // {value: 3, done: flase}
+g.next()//{value: undefined, done: true}
+</code></pre><p>generator函数不会返回结果，而是返回指针对象，表示当前阶段作息（value是yield语句后边表达式的值，表示当前阶段的值，done表示generator函数是否执行完毕）。调用 g 的next方法，会移动内部指针（即执行异步任务的第一段），指向第一个遇到的yield语句，上例是执行到x+2为止，当再次调用的时候程序从“var y = yield x + 2”处开始执行，后边没有语句了，直接return y肯定是undefined。</p><p>next方法返回值的value属性，是generator函数向外输入数据；next方法还可以接收参数，传入遍历器g中，作为上个阶段异步任务的返回结果。</p><pre class="language-text"><code>function* () {
+  var y = yield x + 2
+  return y
+}
+var g = gen(1)
+g.next() // {value: 3, done: false}
+g.next(2) // {value: 2, done: true}
+// 此处g.next(2)将2赋值给&quot;var y = yield x + 2&quot;处的y，即上面提到的作为上个阶段异步任务的返回结果。
+</code></pre><pre class="language-text"><code>function* () {
+  var y = yield x + 2
+  return y
+}
+var g = gen(1)
+g.next(2) // {value: 3, done: false}
+g.next() // {value: undefined, done: true}
+// 第一次调用 g.next(2)中传入的参数2是无效，因为在遍历器生成的时候就用var g = gen(1)传入了参数，调用g的next方法会产出生成时传入的参数，所以结果还是1,第二次调用 g.next()并没有传入参数，所以用return y 返回结果是undefined
+</code></pre><pre class="language-text"><code>function* () {
+  var y = yield x + 2
+  return y
+}
+var g = gen(1)
+g.next(2) // {value: 3, done: false}
+g.next(5) // {value: 5, done: true}
+// 此处 赋值5给y后直接返回y所以结果是5
+</code></pre><pre class="language-text"><code>function* () {
+  var y = yield x + 2
+  console.log(y)
+  y = x
+}
+var g = gen(1)
+g.next() // {value: 3, done: false}
+g.next(5) // {value: 1, done: true}
+结果： 5
+      {value: 1, done: true}
+// 此处赋值给y后重新赋值y给x，所以结果是1
+</code></pre><h2 id="generator函数的错误处理"><a href="#generator函数的错误处理" aria-hidden="true" class="header-anchor">#</a> generator函数的错误处理</h2><p>function* gen(x) {
+try {
+var y = yield x + 2
+} catch(e) {
+console.log(e)
+}
+return y
+}
+var g = gen(1)
+g.next()
+g.throw('出错了')</p><h2 id="generator函数的用法"><a href="#generator函数的用法" aria-hidden="true" class="header-anchor">#</a> generator函数的用法</h2><p>var fetch = require('node-fetch')</p><p>function* gen() {
+var url = 'https://api.github.com/users/github'
+var result = yield fetch(url)
+console.log(result.bio)
+}
+var g =gen()
+var result = g.next()
+result.value.then(function(data) {
+return data.json()
+}).then(function(data) {
+g.next(data)
+})</p><h1 id="async"><a href="#async" aria-hidden="true" class="header-anchor">#</a> async</h1><h2 id="async是什么"><a href="#async是什么" aria-hidden="true" class="header-anchor">#</a> async是什么</h2><p>async是generator函数的语法糖。只是将generator里的*替换成了async表示里边有异步函数，yield替换成了await表示紧跟在后边的表达式需要等待结果。</p><pre class="language-text"><code>function timeout(ms) {
+  return new Promise((resolve) {
+    setTimeout(resolve, ms)
+    })
+}
+
+async function asyncPrint(value, ms) {
+  await timeout(ms)
+  console.log(value)
+}
+
+asyncPrint('hello', 50)
+// 指定50秒后输出hello
+</code></pre></div><!----><div class="content page-nav"><p class="inner"><span class="prev">
+        ← <a href="/study/vue-accordion.html" class="prev">
+          23.vue使用事件委托实现手风琴
+        </a></span><span class="next"><a href="/study/capture-debugging-tool.html">
+          25.抓包调试工具
+        </a> →
+      </span></p></div></div></div></div>
+    <script src="/assets/js/18.924155d6.js" defer></script><script src="/assets/js/app.21af4b7a.js" defer></script>
+  </body>
+</html>

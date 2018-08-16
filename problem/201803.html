@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>霍梦林的个人博客 | vuex挂载store</title>
+    <meta name="description" content="Just playing around">
+    
+    
+    <link rel="preload" href="/assets/css/46.styles.b646c9c7.css" as="style"><link rel="preload" href="/assets/js/app.21af4b7a.js" as="script"><link rel="preload" href="/assets/js/38.20975580.js" as="script"><link rel="prefetch" href="/assets/js/23.62bfb48a.js"><link rel="prefetch" href="/assets/js/0.ad434982.js"><link rel="prefetch" href="/assets/js/1.de00d4e2.js"><link rel="prefetch" href="/assets/js/2.8e4568be.js"><link rel="prefetch" href="/assets/js/3.ba3de1c7.js"><link rel="prefetch" href="/assets/js/4.ed75d86a.js"><link rel="prefetch" href="/assets/js/5.f5b66771.js"><link rel="prefetch" href="/assets/js/6.ac2b7510.js"><link rel="prefetch" href="/assets/js/7.849df679.js"><link rel="prefetch" href="/assets/js/8.32604b3f.js"><link rel="prefetch" href="/assets/js/9.65cc79e2.js"><link rel="prefetch" href="/assets/js/10.bee2823d.js"><link rel="prefetch" href="/assets/js/11.dbec1204.js"><link rel="prefetch" href="/assets/js/12.4cc4f4b0.js"><link rel="prefetch" href="/assets/js/13.fb4a1834.js"><link rel="prefetch" href="/assets/js/14.d2671700.js"><link rel="prefetch" href="/assets/js/15.31de3449.js"><link rel="prefetch" href="/assets/js/16.357740a9.js"><link rel="prefetch" href="/assets/js/17.285d1748.js"><link rel="prefetch" href="/assets/js/18.924155d6.js"><link rel="prefetch" href="/assets/js/19.d96ed59a.js"><link rel="prefetch" href="/assets/js/20.67ee3641.js"><link rel="prefetch" href="/assets/js/21.3443a30e.js"><link rel="prefetch" href="/assets/js/22.15d6b2e5.js"><link rel="prefetch" href="/assets/js/24.bbcffed2.js"><link rel="prefetch" href="/assets/js/25.2d46b06d.js"><link rel="prefetch" href="/assets/js/26.18ff9f32.js"><link rel="prefetch" href="/assets/js/27.eb667acf.js"><link rel="prefetch" href="/assets/js/28.00a64dc0.js"><link rel="prefetch" href="/assets/js/29.0dd9e08c.js"><link rel="prefetch" href="/assets/js/30.356525db.js"><link rel="prefetch" href="/assets/js/31.b9ad12f5.js"><link rel="prefetch" href="/assets/js/32.bc18723d.js"><link rel="prefetch" href="/assets/js/33.395c2652.js"><link rel="prefetch" href="/assets/js/34.dc6f2133.js"><link rel="prefetch" href="/assets/js/35.cff13afc.js"><link rel="prefetch" href="/assets/js/36.e1ccc63a.js"><link rel="prefetch" href="/assets/js/37.87a3a50b.js"><link rel="prefetch" href="/assets/js/39.fe1ec382.js"><link rel="prefetch" href="/assets/js/40.0fa937cf.js"><link rel="prefetch" href="/assets/js/41.1dfcb875.js"><link rel="prefetch" href="/assets/js/42.f3ddae5b.js"><link rel="prefetch" href="/assets/js/43.c234813d.js"><link rel="prefetch" href="/assets/js/44.ee33685d.js"><link rel="prefetch" href="/assets/js/45.d7f97673.js">
+    <link rel="stylesheet" href="/assets/css/46.styles.b646c9c7.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div><a href="/" class="home-link router-link-active"><!----><span class="site-name">
+      霍梦林的个人博客
+    </span></a><div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""><!----></div><nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">Home</a></div><div class="nav-item"><a href="/problem/" class="nav-link router-link-active">Problem</a></div><div class="nav-item"><a href="/study/" class="nav-link">Study</a></div><div class="nav-item"><a href="http://blog.csdn.net/weixin_38318244/" target="_blank" rel="noopener noreferrer" class="nav-link">CSDN</a></div><div class="nav-item"><a href="https://github.com/momo-0902" target="_blank" rel="noopener noreferrer" class="nav-link">Github</a></div><!----></nav></div></header><div class="sidebar-mask"></div><div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">Home</a></div><div class="nav-item"><a href="/problem/" class="nav-link router-link-active">Problem</a></div><div class="nav-item"><a href="/study/" class="nav-link">Study</a></div><div class="nav-item"><a href="http://blog.csdn.net/weixin_38318244/" target="_blank" rel="noopener noreferrer" class="nav-link">CSDN</a></div><div class="nav-item"><a href="https://github.com/momo-0902" target="_blank" rel="noopener noreferrer" class="nav-link">Github</a></div><!----></nav><ul class="sidebar-links"><li><a href="/problem/" class="sidebar-link">项目中遇到的问题</a></li><li><a href="/problem/201709.html" class="sidebar-link">201709</a></li><li><a href="/problem/201710.html" class="sidebar-link">201710</a></li><li><a href="/problem/201711.html" class="sidebar-link">201711</a></li><li><a href="/problem/201712.html" class="sidebar-link">201712</a></li><li><a href="/problem/201801.html" class="sidebar-link">201801</a></li><li><a href="/problem/201803.html" class="active sidebar-link">201803</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/problem/201803.html#vuex挂载store" class="sidebar-link">vuex挂载store</a></li><li class="sidebar-sub-header"><a href="/problem/201803.html#页面上显示的vue文件都要引入到app-vue中并实例化" class="sidebar-link">页面上显示的vue文件都要引入到app.vue中并实例化</a></li><li class="sidebar-sub-header"><a href="/problem/201803.html#未知数子元素等分剩余空间不能用flex-1" class="sidebar-link">未知数子元素等分剩余空间不能用flex:1</a></li></ul></li><li><a href="/problem/201804.html" class="sidebar-link">201804</a></li><li><a href="/problem/201805.html" class="sidebar-link">201805</a></li><li><a href="/problem/201807.html" class="sidebar-link">201807</a></li></ul></div><div class="page"><div class="content"><h2 id="vuex挂载store"><a href="#vuex挂载store" aria-hidden="true" class="header-anchor">#</a> vuex挂载store</h2><pre class="language-text"><code>项目：《自学vuex》
+参照链接：&lt;https://www.cnblogs.com/ghostwu/p/7521097.html&gt;
+时间： 2018年3月23日
+问题：引用store中state的状态userName 提示错误 “cannot read property 'state' of undefined（不能读取undefined上的state属性）”
+分析：引用时使用this.$store.state.userName，此处错误表明store未定义，原因是未在创建vue实例时将store挂载上去
+关键代码:
+new Vue({
+  el: 'App',
+  router,
+  store,
+  components: { App },
+  template: '&lt;App/&gt;'
+})
+
+</code></pre><h2 id="页面上显示的vue文件都要引入到app-vue中并实例化"><a href="#页面上显示的vue文件都要引入到app-vue中并实例化" aria-hidden="true" class="header-anchor">#</a> 页面上显示的vue文件都要引入到app.vue中并实例化</h2><pre class="language-text"><code>项目：《自学vuex》
+时间： 2018年3月26日
+问题：使用vuex的mapState辅助函数帮助一个组件获取多个状态时，页面不生效
+分析：在.vue文件中添加了其他的元素页面也不显示，猜测可能是页面中没有添加成功.vue单文件组件，在App.vue中并未对mapState.vue文件做引入以及实例化
+关键代码:
+&lt;template&gt;
+  &lt;div id=&quot;app&quot;&gt;
+    &lt;Mainc&gt;&lt;/Mainc&gt;
+    &lt;testc&gt;&lt;/testc&gt;
+    &lt;mapTest&gt;&lt;/mapTest&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+import mapTest from './components/mapStateTest.vue'
+
+export default {
+  name: 'App',
+  components: [
+    Mainc,
+    testc,
+    mapTest
+  ]
+}
+&lt;/script&gt;
+</code></pre><p>##挂载vue实例到页面中</p><pre class="language-text"><code>项目：《华智数联-拟定方案》
+时间： 2018年3月29日
+问题：在新写的模态框里使用v-show命令不起作用，切换状态，绑定事件等均无反应
+分析：模态框不能隐藏，但使用display:none可以，可见是js与html出了问题，经过查看，发现js并无问题，查看html结构，发现此处我把新写的模态框放在了id=app的盒子之外,而vue实例是挂载在了此div上
+关键代码：
+new Vue ({
+  el: 'app',
+  data： {}
+})
+</code></pre><h2 id="未知数子元素等分剩余空间不能用flex-1"><a href="#未知数子元素等分剩余空间不能用flex-1" aria-hidden="true" class="header-anchor">#</a> 未知数子元素等分剩余空间不能用flex:1</h2><pre class="language-text"><code>项目：《华智数联-拟定方案》
+时间： 2018年3月28日
+问题：列表里省市都是循环出来的，但想每行只有5个，记得使用flex：1是等分空间的，但不记得5份如何定义属性
+分析：flex:1是已知子元素有几个，才可以等分剩余空间的，并没有属性能够定义未知子元素的父元素的属性，此处可将每个子元素宽度设置为20%
+</code></pre></div><!----><div class="content page-nav"><p class="inner"><span class="prev">
+        ← <a href="/problem/201801.html" class="prev">
+          201801
+        </a></span><span class="next"><a href="/problem/201804.html">
+          201804
+        </a> →
+      </span></p></div></div></div></div>
+    <script src="/assets/js/38.20975580.js" defer></script><script src="/assets/js/app.21af4b7a.js" defer></script>
+  </body>
+</html>
