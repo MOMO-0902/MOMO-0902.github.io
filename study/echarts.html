@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>霍梦林的个人博客 | echarts封装及接口数据渲染图表</title>
+    <meta name="description" content="Just playing around">
+    
+    
+    <link rel="preload" href="/assets/css/46.styles.b646c9c7.css" as="style"><link rel="preload" href="/assets/js/app.21af4b7a.js" as="script"><link rel="preload" href="/assets/js/21.3443a30e.js" as="script"><link rel="prefetch" href="/assets/js/23.62bfb48a.js"><link rel="prefetch" href="/assets/js/0.ad434982.js"><link rel="prefetch" href="/assets/js/1.de00d4e2.js"><link rel="prefetch" href="/assets/js/2.8e4568be.js"><link rel="prefetch" href="/assets/js/3.ba3de1c7.js"><link rel="prefetch" href="/assets/js/4.ed75d86a.js"><link rel="prefetch" href="/assets/js/5.f5b66771.js"><link rel="prefetch" href="/assets/js/6.ac2b7510.js"><link rel="prefetch" href="/assets/js/7.849df679.js"><link rel="prefetch" href="/assets/js/8.32604b3f.js"><link rel="prefetch" href="/assets/js/9.65cc79e2.js"><link rel="prefetch" href="/assets/js/10.bee2823d.js"><link rel="prefetch" href="/assets/js/11.dbec1204.js"><link rel="prefetch" href="/assets/js/12.4cc4f4b0.js"><link rel="prefetch" href="/assets/js/13.fb4a1834.js"><link rel="prefetch" href="/assets/js/14.d2671700.js"><link rel="prefetch" href="/assets/js/15.31de3449.js"><link rel="prefetch" href="/assets/js/16.357740a9.js"><link rel="prefetch" href="/assets/js/17.285d1748.js"><link rel="prefetch" href="/assets/js/18.924155d6.js"><link rel="prefetch" href="/assets/js/19.d96ed59a.js"><link rel="prefetch" href="/assets/js/20.67ee3641.js"><link rel="prefetch" href="/assets/js/22.15d6b2e5.js"><link rel="prefetch" href="/assets/js/24.bbcffed2.js"><link rel="prefetch" href="/assets/js/25.2d46b06d.js"><link rel="prefetch" href="/assets/js/26.18ff9f32.js"><link rel="prefetch" href="/assets/js/27.eb667acf.js"><link rel="prefetch" href="/assets/js/28.00a64dc0.js"><link rel="prefetch" href="/assets/js/29.0dd9e08c.js"><link rel="prefetch" href="/assets/js/30.356525db.js"><link rel="prefetch" href="/assets/js/31.b9ad12f5.js"><link rel="prefetch" href="/assets/js/32.bc18723d.js"><link rel="prefetch" href="/assets/js/33.395c2652.js"><link rel="prefetch" href="/assets/js/34.dc6f2133.js"><link rel="prefetch" href="/assets/js/35.cff13afc.js"><link rel="prefetch" href="/assets/js/36.e1ccc63a.js"><link rel="prefetch" href="/assets/js/37.87a3a50b.js"><link rel="prefetch" href="/assets/js/38.20975580.js"><link rel="prefetch" href="/assets/js/39.fe1ec382.js"><link rel="prefetch" href="/assets/js/40.0fa937cf.js"><link rel="prefetch" href="/assets/js/41.1dfcb875.js"><link rel="prefetch" href="/assets/js/42.f3ddae5b.js"><link rel="prefetch" href="/assets/js/43.c234813d.js"><link rel="prefetch" href="/assets/js/44.ee33685d.js"><link rel="prefetch" href="/assets/js/45.d7f97673.js">
+    <link rel="stylesheet" href="/assets/css/46.styles.b646c9c7.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div><a href="/" class="home-link router-link-active"><!----><span class="site-name">
+      霍梦林的个人博客
+    </span></a><div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""><!----></div><nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">Home</a></div><div class="nav-item"><a href="/problem/" class="nav-link">Problem</a></div><div class="nav-item"><a href="/study/" class="nav-link router-link-active">Study</a></div><div class="nav-item"><a href="http://blog.csdn.net/weixin_38318244/" target="_blank" rel="noopener noreferrer" class="nav-link">CSDN</a></div><div class="nav-item"><a href="https://github.com/momo-0902" target="_blank" rel="noopener noreferrer" class="nav-link">Github</a></div><!----></nav></div></header><div class="sidebar-mask"></div><div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">Home</a></div><div class="nav-item"><a href="/problem/" class="nav-link">Problem</a></div><div class="nav-item"><a href="/study/" class="nav-link router-link-active">Study</a></div><div class="nav-item"><a href="http://blog.csdn.net/weixin_38318244/" target="_blank" rel="noopener noreferrer" class="nav-link">CSDN</a></div><div class="nav-item"><a href="https://github.com/momo-0902" target="_blank" rel="noopener noreferrer" class="nav-link">Github</a></div><!----></nav><ul class="sidebar-links"><li><a href="/study/" class="sidebar-link">学习笔记</a></li><li><a href="/study/axios.html" class="sidebar-link">1.axios</a></li><li><a href="/study/document.html" class="sidebar-link">2.document</a></li><li><a href="/study/css.html" class="sidebar-link">3.css</a></li><li><a href="/study/css-selector.html" class="sidebar-link">4.css选择器</a></li><li><a href="/study/flex.html" class="sidebar-link">5.flex</a></li><li><a href="/study/git.html" class="sidebar-link">6.git</a></li><li><a href="/study/html.html" class="sidebar-link">7.html</a></li><li><a href="/study/http.html" class="sidebar-link">8.http</a></li><li><a href="/study/input.html" class="sidebar-link">9.input</a></li><li><a href="/study/js-basis.html" class="sidebar-link">10.js语言基础</a></li><li><a href="/study/RSA-encrypt.html" class="sidebar-link">12.RSA加密</a></li><li><a href="/study/vue-router.html" class="sidebar-link">13.vue-router</a></li><li><a href="/study/vue.html" class="sidebar-link">14.vue</a></li><li><a href="/study/vuex.html" class="sidebar-link">15.vuex</a></li><li><a href="/study/vuePress.html" class="sidebar-link">16.vuePress</a></li><li><a href="/study/zepto.html" class="sidebar-link">17.zepto</a></li><li><a href="/study/code-optimization.html" class="sidebar-link">18.代码逻辑优化</a></li><li><a href="/study/scroll-page-bottom.html" class="sidebar-link">19.判断是否滚动到页面底部</a></li><li><a href="/study/find-the-cause-of-error.html" class="sidebar-link">20.找错误原因</a></li><li><a href="/study/local-cache.html" class="sidebar-link">21.本地缓存</a></li><li><a href="/study/algorithm.html" class="sidebar-link">22.算法</a></li><li><a href="/study/vue-accordion.html" class="sidebar-link">23.vue使用事件委托实现手风琴</a></li><li><a href="/study/generator.html" class="sidebar-link">24.异步编程-generator</a></li><li><a href="/study/capture-debugging-tool.html" class="sidebar-link">25.抓包调试工具</a></li><li><a href="/study/art-template.html" class="sidebar-link">26.art-template</a></li><li><a href="/study/bootstrap-datepicker.html" class="sidebar-link">27.bootstrap-datepicker</a></li><li><a href="/study/simulation-form-submit.html" class="sidebar-link">28.模拟form提交表单</a></li><li><a href="/study/echarts.html" class="active sidebar-link">29.echarts封装渲染和部分配置</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/study/echarts.html#echarts封装及接口数据渲染图表" class="sidebar-link">echarts封装及接口数据渲染图表</a></li><li class="sidebar-sub-header"><a href="/study/echarts.html#接口数据渲染图表" class="sidebar-link">接口数据渲染图表</a></li><li class="sidebar-sub-header"><a href="/study/echarts.html#echarts图表配置参数" class="sidebar-link">echarts图表配置参数</a></li></ul></li><li><a href="/study/return-specific-date.html" class="sidebar-link">30.返回某个月的某个星期几</a></li><li><a href="/study/prevent-duplicate-request.html" class="sidebar-link">31.防止接口重复请求</a></li><li><a href="/study/table.html" class="sidebar-link">32.table的操作</a></li><li><a href="/study/not-yet-classified.html" class="sidebar-link">33.暂未分类</a></li></ul></div><div class="page"><div class="content"><h2 id="echarts封装及接口数据渲染图表"><a href="#echarts封装及接口数据渲染图表" aria-hidden="true" class="header-anchor">#</a> echarts封装及接口数据渲染图表</h2><p>因为要使用接口数据渲染图表,所以我们不能写死数据,要对echarts进行封装</p><pre class="language-html"><code>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>chart clearfix mt80<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+      <span class="token comment">&lt;!-- 为 ECharts 准备一个具备大小（宽高）的 DOM --&gt;</span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>publication<span class="token punctuation">&quot;</span></span><span class="token style-attr language-css"><span class="token attr-name"> <span class="token attr-name">style</span></span><span class="token punctuation">=&quot;</span><span class="token attr-value"><span class="token property">width</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span> <span class="token property">height</span><span class="token punctuation">:</span>400px<span class="token punctuation">;</span></span><span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+</code></pre><pre class="language-js"><code>  <span class="token comment">// 页面初始化时渲染图表</span>
+  <span class="token keyword">var</span> pubChart <span class="token operator">=</span> echarts<span class="token punctuation">.</span><span class="token function">init</span><span class="token punctuation">(</span>document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'publication'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  pubChart<span class="token punctuation">.</span><span class="token function">setOption</span><span class="token punctuation">(</span>industryTableView<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+ <span class="token comment">// 客户类别上刊率图表</span>
+ <span class="token comment">// 将echarts数据定制全部写到一个方法里,方法参数为接口处数据</span>
+   <span class="token keyword">function</span> <span class="token function">industryTableView</span><span class="token punctuation">(</span>legendData<span class="token punctuation">,</span> xAxisData<span class="token punctuation">,</span> seriesData<span class="token punctuation">,</span> month<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    
+    <span class="token keyword">var</span> text <span class="token operator">=</span> month <span class="token operator">+</span> <span class="token string">'月份客户类别上刊率年度对比（%）'</span>
+    <span class="token comment">// 指定图表的配置项和数据</span>
+    <span class="token keyword">var</span> pubOption <span class="token operator">=</span> <span class="token punctuation">{</span>
+      title<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        text<span class="token punctuation">:</span> text<span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      legend<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        data<span class="token punctuation">:</span> legendData<span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      calculable<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+      xAxis<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+        type<span class="token punctuation">:</span> <span class="token string">'category'</span><span class="token punctuation">,</span>
+        data<span class="token punctuation">:</span> xAxisData<span class="token punctuation">,</span>
+        axisLabel<span class="token punctuation">:</span><span class="token punctuation">{</span>
+          interval<span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+          rotate<span class="token punctuation">:</span> <span class="token number">60</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+      yAxis<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+        type<span class="token punctuation">:</span> <span class="token string">'value'</span><span class="token punctuation">,</span>
+        axisLabel<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+            formatter<span class="token punctuation">:</span> <span class="token string">'{value} %'</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+      series<span class="token punctuation">:</span> seriesData<span class="token punctuation">,</span>
+      label<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        normal<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+            show<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+            position<span class="token punctuation">:</span> <span class="token string">'top'</span><span class="token punctuation">,</span>
+            formatter<span class="token punctuation">:</span> <span class="token string">'{c}%'</span><span class="token punctuation">,</span>
+            testStyle<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+                color<span class="token punctuation">:</span> <span class="token string">'black'</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> pubOption
+    <span class="token comment">// 使用刚指定的配置项和数据显示图表。</span>
+    <span class="token punctuation">}</span>
+
+
+</code></pre><h2 id="接口数据渲染图表"><a href="#接口数据渲染图表" aria-hidden="true" class="header-anchor">#</a> 接口数据渲染图表</h2><pre class="language-js"><code>  <span class="token comment">// 我们使用var 定义的数据来代替接口请求来的数据</span>
+<span class="token keyword">var</span> indlist <span class="token operator">=</span> <span class="token punctuation">[</span>
+  <span class="token punctuation">{</span>
+    time<span class="token punctuation">:</span> <span class="token string">'2017'</span><span class="token punctuation">,</span> 
+    ji<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'2%'</span><span class="token punctuation">,</span> <span class="token string">'3%'</span><span class="token punctuation">,</span> <span class="token string">'5%'</span><span class="token punctuation">,</span> <span class="token string">'7%'</span><span class="token punctuation">]</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    time<span class="token punctuation">:</span> <span class="token string">'2018'</span><span class="token punctuation">,</span> 
+    ji<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'4%'</span><span class="token punctuation">,</span> <span class="token string">'6%'</span><span class="token punctuation">,</span> <span class="token string">'9%'</span><span class="token punctuation">,</span> <span class="token string">'3%'</span><span class="token punctuation">]</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">]</span>
+
+
+<span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> indlist<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  legendData<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>indlist<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>time<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">substring</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">'年'</span><span class="token punctuation">)</span>
+  <span class="token keyword">var</span> seriesNum <span class="token operator">=</span> indlist<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>ji
+  <span class="token keyword">var</span> seriesItem <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+  seriesItem<span class="token punctuation">.</span>name <span class="token operator">=</span>indlist<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>time<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">substring</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">'年'</span>
+  seriesItem<span class="token punctuation">.</span>type <span class="token operator">=</span> <span class="token string">'bar'</span>
+  seriesItem<span class="token punctuation">.</span>data <span class="token operator">=</span> seriesNum
+  seriesData<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>seriesItem<span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre><p>所以最后seriesData的结果为</p><pre class="language-js"><code>seriesData <span class="token operator">=</span> <span class="token punctuation">[</span>
+  <span class="token punctuation">{</span>
+    name<span class="token punctuation">:</span> <span class="token string">'2017年'</span><span class="token punctuation">,</span>
+    type<span class="token punctuation">:</span> <span class="token string">'bar'</span><span class="token punctuation">,</span>
+    data<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'2%'</span><span class="token punctuation">,</span> <span class="token string">'3%'</span><span class="token punctuation">,</span> <span class="token string">'5%'</span><span class="token punctuation">,</span> <span class="token string">'7%'</span><span class="token punctuation">]</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    name<span class="token punctuation">:</span> <span class="token string">'2018年'</span><span class="token punctuation">,</span>
+    type<span class="token punctuation">:</span> <span class="token string">'bar'</span><span class="token punctuation">,</span>
+    data<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'4%'</span><span class="token punctuation">,</span> <span class="token string">'6%'</span><span class="token punctuation">,</span> <span class="token string">'9%'</span><span class="token punctuation">,</span> <span class="token string">'3%'</span><span class="token punctuation">]</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">]</span>
+</code></pre><p>然后调用函数,将结果填充到图表中</p><p>再次渲染图表时请使用请加参数true,不合并数据,因为setOption默认设置是合并表格数据.</p><pre class="language-js"><code>pubChart<span class="token punctuation">.</span><span class="token function">setOption</span><span class="token punctuation">(</span><span class="token function">industryTableView</span><span class="token punctuation">(</span>legendData<span class="token punctuation">,</span> xAxisData<span class="token punctuation">,</span> seriesData<span class="token punctuation">,</span> month<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+</code></pre><h2 id="echarts图表配置参数"><a href="#echarts图表配置参数" aria-hidden="true" class="header-anchor">#</a> echarts图表配置参数</h2><h3 id="_1-坐标轴两边留白"><a href="#_1-坐标轴两边留白" aria-hidden="true" class="header-anchor">#</a> 1.坐标轴两边留白</h3><pre class="language-js"><code> xAxis<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+  boundaryGap<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token comment">//坐标轴两边留白</span>
+ <span class="token punctuation">}</span>
+</code></pre><p>boundaryGap为false图表内容紧临坐标轴，为true时坐标轴与图表之前有空白</p><h3 id="_2-x轴刻度标签显示不完全"><a href="#_2-x轴刻度标签显示不完全" aria-hidden="true" class="header-anchor">#</a> 2.x轴刻度标签显示不完全</h3><h5 id="·设置标签与坐标轴的显示间隔与旋转角度"><a href="#·设置标签与坐标轴的显示间隔与旋转角度" aria-hidden="true" class="header-anchor">#</a> ·设置标签与坐标轴的显示间隔与旋转角度</h5><pre class="language-js"><code>axisLabel<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+  interval<span class="token punctuation">:</span><span class="token number">0</span><span class="token punctuation">,</span>
+  rotate<span class="token punctuation">:</span><span class="token number">40</span>
+<span class="token punctuation">}</span>
+</code></pre><h5 id="·设置标签换行"><a href="#·设置标签换行" aria-hidden="true" class="header-anchor">#</a> ·设置标签换行</h5><p>让标签按分隔符显示</p><pre class="language-js"><code>axisLabel<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+  formatter<span class="token punctuation">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span>value<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> value<span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span><span class="token string">''</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span><span class="token string">'\n'</span><span class="token punctuation">)</span> <span class="token comment">//将标签竖排显示，将字符串中每个字符都用回车分隔开</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre><h3 id="_3-y轴刻度标识显示不全"><a href="#_3-y轴刻度标识显示不全" aria-hidden="true" class="header-anchor">#</a> 3.y轴刻度标识显示不全</h3><p>y轴刻度显示不全，调整图表大小和外边盒子大小都不起作用
+在此要通过属性实现，有两个方法</p><h5 id="·grid绘图区调整"><a href="#·grid绘图区调整" aria-hidden="true" class="header-anchor">#</a> ·grid绘图区调整</h5><p>grid为直角坐标系内绘图网格，可以在网格上绘制图表
+可通过设置grid组件的 top、bottom、left、right 等属性来设置grid组件距离窗口上下左右的距离
+通过 width height 等设置组件宽高</p><pre class="language-js"><code>grid<span class="token punctuation">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+  left<span class="token punctuation">:</span> <span class="token number">50</span>
+<span class="token punctuation">}</span>
+</code></pre><p>也可通过x y属性来设置留白位置</p><pre class="language-js"><code>grid<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+  x<span class="token punctuation">:</span> <span class="token number">60</span><span class="token punctuation">,</span> <span class="token comment">//左留白</span>
+  y<span class="token punctuation">:</span> <span class="token number">80</span><span class="token punctuation">,</span> <span class="token comment">// 上留白</span>
+  x2<span class="token punctuation">:</span> <span class="token number">12</span><span class="token punctuation">,</span> <span class="token comment">// 右留白</span>
+  y2<span class="token punctuation">:</span> <span class="token number">15</span>  <span class="token comment">// 下留白</span>
+<span class="token punctuation">}</span>
+
+</code></pre><h5 id="·刻度标签与轴线之前的距离"><a href="#·刻度标签与轴线之前的距离" aria-hidden="true" class="header-anchor">#</a> ·刻度标签与轴线之前的距离</h5><p>axisLabel.margin 刻度标签与轴线之前的距离</p><pre class="language-js"><code>yAixs<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+  axisLabel<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    margin<span class="token punctuation">:</span> <span class="token number">50</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre><p>axisLabel属性为x y轴坐标轴刻度标签的相关设置(xAxis.axisLabel / yAxis.axisLabel)</p><h5 id="axislabel常用属性"><a href="#axislabel常用属性" aria-hidden="true" class="header-anchor">#</a> *axisLabel常用属性</h5><p>. axisLabel.show 是否显示刻度标签</p><p>. axisLabel.interval 坐标轴刻度标签的显示间隔</p><p>. axisLabel.inside 刻度标签是否朝内，默认朝外</p><p>. axisLabel.rotate 刻度标签旋转的角度，在标签显示不下的时候可对标签进行旋转防止重叠</p><p>. axisLabel.formatter 刻度标签的内容格式器</p><p>. axisLabel.color(fontize/fontStyle/align/lineHeight/backgroundColor) 刻度标签常用css样式设置</p><h3 id="_4-图表区域线条颜色等"><a href="#_4-图表区域线条颜色等" aria-hidden="true" class="header-anchor">#</a> 4.图表区域线条颜色等</h3><h5 id="·areastyle-区域填充颜色"><a href="#·areastyle-区域填充颜色" aria-hidden="true" class="header-anchor">#</a> ·areaStyle 区域填充颜色</h5><h5 id="·linestyle-线条颜色"><a href="#·linestyle-线条颜色" aria-hidden="true" class="header-anchor">#</a> ·lineStyle 线条颜色</h5><h5 id="·itemstyle-折线点颜色"><a href="#·itemstyle-折线点颜色" aria-hidden="true" class="header-anchor">#</a> ·itemStyle 折线点颜色</h5><pre class="language-js"><code>series<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+  <span class="token comment">// 折线区域颜色</span>
+  areaStyle<span class="token punctuation">:</span> <span class="token punctuation">{</span> color<span class="token punctuation">:</span> <span class="token string">'#0c229f45'</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token comment">// 折线线条颜色</span>
+  lineStyle<span class="token punctuation">:</span> <span class="token punctuation">{</span> color<span class="token punctuation">:</span> <span class="token string">'#0c229f45'</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token comment">// 折线点颜色（散点图颜色描边等样式）</span>
+  itemStyle<span class="token punctuation">:</span> <span class="token punctuation">{</span> color<span class="token punctuation">:</span> <span class="token string">'#0c229f45'</span><span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">]</span>
+</code></pre><h3 id="_5-图表上文本标签设置-label-normal"><a href="#_5-图表上文本标签设置-label-normal" aria-hidden="true" class="header-anchor">#</a> 5.图表上文本标签设置 label.normal</h3><pre class="language-js"><code>series<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+  label<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    normal<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      show<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token comment">// 是否显示</span>
+      position<span class="token punctuation">:</span> top<span class="token punctuation">,</span> <span class="token comment">//值还可以是(/left/right/inside/insideTop，[50%, 50%]相对图形左上角的位置)</span>
+      distance<span class="token punctuation">:</span> <span class="token number">30</span>，<span class="token comment">// 当positon值为'top'等有效</span>
+      rotate<span class="token punctuation">:</span> <span class="token number">30</span><span class="token punctuation">,</span> <span class="token comment">// 旋转角度</span>
+      offset<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token comment">//文字偏移量</span>
+      formatter<span class="token punctuation">:</span>  <span class="token keyword">function</span><span class="token punctuation">(</span>val<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">var</span> strs <span class="token operator">=</span> val<span class="token punctuation">.</span>name<span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span><span class="token string">''</span><span class="token punctuation">)</span> <span class="token comment">//字符串数组</span>
+        <span class="token keyword">var</span> str <span class="token operator">=</span> <span class="token string">''</span>
+        <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> s<span class="token punctuation">;</span> s <span class="token operator">=</span> strs<span class="token punctuation">[</span>i<span class="token operator">++</span><span class="token punctuation">]</span><span class="token punctuation">;</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token comment">//遍历字符串数组</span>
+          str <span class="token operator">+=</span> s
+          <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token operator">!</span><span class="token punctuation">(</span>i <span class="token operator">%</span> <span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">)</span> str <span class="token operator">+=</span> <span class="token string">'\n'</span> <span class="token comment">//按需要求余</span>
+          <span class="token punctuation">}</span>
+        <span class="token keyword">return</span> <span class="token template-string"><span class="token string">`</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>str<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">: </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>val<span class="token punctuation">.</span>value<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">%`</span></span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token comment">//文本格式设置</span>
+      color<span class="token punctuation">:</span> red <span class="token comment">// (fontSize, fontStyle, fontWeight等css常用属性)</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">]</span>
+</code></pre><h3 id="_6-图表上图表的高亮样式label-emphasis"><a href="#_6-图表上图表的高亮样式label-emphasis" aria-hidden="true" class="header-anchor">#</a> 6.图表上图表的高亮样式label.emphasis</h3><pre class="language-js"><code>series<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+  label<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    normal<span class="token punctuation">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+    emphasis<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      show<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token comment">//是否有高亮效果</span>
+      textStyle<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        fontWeight<span class="token punctuation">:</span> <span class="token string">'bold'</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">]</span>
+
+</code></pre><h3 id="_7-标签的视觉引导线样式"><a href="#_7-标签的视觉引导线样式" aria-hidden="true" class="header-anchor">#</a> 7.标签的视觉引导线样式</h3><pre class="language-js"><code>series<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+  labelLine<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    normal<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      show<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token comment">// 是否显示</span>
+      length<span class="token punctuation">:</span> <span class="token number">30</span><span class="token punctuation">,</span> <span class="token comment">// 第一段线长度</span>
+      length2<span class="token punctuation">:</span> <span class="token number">40</span><span class="token punctuation">,</span> <span class="token comment">// 第二段线长度</span>
+      smooth<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token comment">// 是否平滑视觉引导线，也可以是表示平滑程度的数值 </span>
+      lineStyle<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        color<span class="token punctuation">:</span> <span class="token string">'red'</span><span class="token punctuation">,</span> <span class="token comment">// 线的颜色</span>
+        width<span class="token punctuation">:</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token comment">// 线的宽度</span>
+        type<span class="token punctuation">:</span> <span class="token string">'solid'</span> <span class="token comment">// 线的类型</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      emphasis<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        show<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+        lineStyle<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span> <span class="token comment">// 高亮状态下引导线的样式</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">]</span>
+</code></pre><h3 id="_8-横向柱形图显示不同类别所占整体百分比"><a href="#_8-横向柱形图显示不同类别所占整体百分比" aria-hidden="true" class="header-anchor">#</a> 8.横向柱形图显示不同类别所占整体百分比</h3><p>横向柱形图实现思路为将每个类别名称设置为y轴，然后将x轴隐藏</p><p>显示所占百分比思路为设置两个数据区域，然后让两个数据区域重叠，其中一个将数据都设置成100,另一个就设置自己所占百分比就行了</p><pre class="language-js"><code>xAxis<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+  show<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token comment">//将x轴隐藏</span>
+  type<span class="token punctuation">:</span> <span class="token string">'value'</span><span class="token punctuation">,</span>
+  boundaryGap<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token comment">//坐标轴两边留白策略,即图形在坐标轴内距离坐标轴线的边距,在未设置min和max值时,[0,0]表示两边不留白,图表紧挨坐标轴线,[0.3, 0.8]即表示图表与坐标轴之前有留白</span>
+  <span class="token comment">//min: 1000000 当设置min值是坐标轴起点的数值,如果Min值小于数据中的最小值,则图形会到坐标轴左侧显示,设置的boundrayGap: [x, y]中的x值无效,坐标轴刻度按max值和数据值来设定</span>
+  <span class="token comment">//max: 2000000 当设置max值是坐标轴终点的数值,设置的boundrayGap: [x, y]中的y值无效</span>
+<span class="token punctuation">}</span>
+
+yAxis<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+  axisLine<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    show<span class="token punctuation">:</span> <span class="token boolean">false</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token comment">// y轴坐标轴线隐藏,注意不是y轴隐藏,我们还要显示文字的</span>
+  axisTick<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+    show<span class="token punctuation">:</span> <span class="token boolean">false</span>
+  <span class="token punctuation">}</span><span class="token punctuation">]</span> <span class="token comment">// y轴坐标轴刻度隐藏</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 设置两个数据区域</span>
+series<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+  <span class="token punctuation">{</span>
+    type<span class="token punctuation">:</span> <span class="token string">'bar'</span><span class="token punctuation">,</span>
+    data<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">2.3</span><span class="token punctuation">,</span> <span class="token number">64.2</span><span class="token punctuation">,</span> <span class="token number">73.2</span><span class="token punctuation">,</span> <span class="token number">63.4</span><span class="token punctuation">,</span> <span class="token number">63.4</span><span class="token punctuation">]</span>，
+    tooltip<span class="token punctuation">:</span> <span class="token punctuation">{</span> show<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+    barMinHeight<span class="token punctuation">:</span> <span class="token number">30</span><span class="token punctuation">,</span> <span class="token comment">//最小柱高</span>
+    barWidth<span class="token punctuation">:</span> <span class="token number">10</span><span class="token punctuation">,</span> <span class="token comment">// 柱宽度</span>
+    barMaxWidth<span class="token punctuation">:</span> <span class="token comment">// 最大柱宽度</span>
+    z<span class="token punctuation">:</span> <span class="token number">10</span><span class="token punctuation">,</span> <span class="token comment">// 控制图表前后顺序</span>
+    itemStyle<span class="token punctuation">:</span> <span class="token punctuation">{</span> <span class="token comment">// 柱子样式</span>
+      normal<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        color<span class="token punctuation">:</span> <span class="token string">'#ff6600'</span><span class="token punctuation">,</span> <span class="token comment">// 柱状图颜色</span>
+        label<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+          show<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token comment">// 显示文本</span>
+          position<span class="token punctuation">:</span> <span class="token string">'top'</span><span class="token punctuation">,</span> <span class="token comment">// 数据值位置</span>
+          formatter<span class="token punctuation">:</span> <span class="token string">'{c}%'</span><span class="token punctuation">,</span>
+          textStyle<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+            color<span class="token punctuation">:</span> <span class="token string">'#000'</span>
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    type<span class="token punctuation">:</span> <span class="token string">'bar'</span><span class="token punctuation">,</span>
+    data<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">100</span><span class="token punctuation">,</span> <span class="token number">100</span><span class="token punctuation">,</span> <span class="token number">100</span><span class="token punctuation">,</span> <span class="token number">100</span><span class="token punctuation">,</span> <span class="token number">100</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    tooltip<span class="token punctuation">:</span> <span class="token punctuation">{</span> show<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+    barMinHeight<span class="token punctuation">:</span> <span class="token number">30</span><span class="token punctuation">,</span>
+    barWidth<span class="token punctuation">:</span> <span class="token number">10</span><span class="token punctuation">,</span>
+    barMaxWidth<span class="token punctuation">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
+    barGap<span class="token punctuation">:</span> <span class="token string">'-100%'</span><span class="token punctuation">,</span> <span class="token comment">// 两个柱子之间的距离，如果要重叠设置为-100%</span>
+    itemStyle<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      normal<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        color<span class="token punctuation">:</span> <span class="token string">'#ccc'</span><span class="token punctuation">,</span> <span class="token comment">// 柱子颜色，作为底层背景</span>
+        label<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+          show<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+          position<span class="token punctuation">:</span> <span class="token string">'top'</span><span class="token punctuation">,</span>
+          testStyle<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+            color<span class="token punctuation">:</span> <span class="token string">'#000'</span>
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">]</span>
+
+
+</code></pre></div><!----><div class="content page-nav"><p class="inner"><span class="prev">
+        ← <a href="/study/simulation-form-submit.html" class="prev">
+          28.模拟form提交表单
+        </a></span><span class="next"><a href="/study/return-specific-date.html">
+          30.返回某个月的某个星期几
+        </a> →
+      </span></p></div></div></div></div>
+    <script src="/assets/js/21.3443a30e.js" defer></script><script src="/assets/js/app.21af4b7a.js" defer></script>
+  </body>
+</html>

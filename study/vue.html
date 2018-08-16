@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>霍梦林的个人博客 | vue如何使用disabled</title>
+    <meta name="description" content="Just playing around">
+    
+    
+    <link rel="preload" href="/assets/css/46.styles.b646c9c7.css" as="style"><link rel="preload" href="/assets/js/app.21af4b7a.js" as="script"><link rel="preload" href="/assets/js/3.ba3de1c7.js" as="script"><link rel="prefetch" href="/assets/js/23.62bfb48a.js"><link rel="prefetch" href="/assets/js/0.ad434982.js"><link rel="prefetch" href="/assets/js/1.de00d4e2.js"><link rel="prefetch" href="/assets/js/2.8e4568be.js"><link rel="prefetch" href="/assets/js/4.ed75d86a.js"><link rel="prefetch" href="/assets/js/5.f5b66771.js"><link rel="prefetch" href="/assets/js/6.ac2b7510.js"><link rel="prefetch" href="/assets/js/7.849df679.js"><link rel="prefetch" href="/assets/js/8.32604b3f.js"><link rel="prefetch" href="/assets/js/9.65cc79e2.js"><link rel="prefetch" href="/assets/js/10.bee2823d.js"><link rel="prefetch" href="/assets/js/11.dbec1204.js"><link rel="prefetch" href="/assets/js/12.4cc4f4b0.js"><link rel="prefetch" href="/assets/js/13.fb4a1834.js"><link rel="prefetch" href="/assets/js/14.d2671700.js"><link rel="prefetch" href="/assets/js/15.31de3449.js"><link rel="prefetch" href="/assets/js/16.357740a9.js"><link rel="prefetch" href="/assets/js/17.285d1748.js"><link rel="prefetch" href="/assets/js/18.924155d6.js"><link rel="prefetch" href="/assets/js/19.d96ed59a.js"><link rel="prefetch" href="/assets/js/20.67ee3641.js"><link rel="prefetch" href="/assets/js/21.3443a30e.js"><link rel="prefetch" href="/assets/js/22.15d6b2e5.js"><link rel="prefetch" href="/assets/js/24.bbcffed2.js"><link rel="prefetch" href="/assets/js/25.2d46b06d.js"><link rel="prefetch" href="/assets/js/26.18ff9f32.js"><link rel="prefetch" href="/assets/js/27.eb667acf.js"><link rel="prefetch" href="/assets/js/28.00a64dc0.js"><link rel="prefetch" href="/assets/js/29.0dd9e08c.js"><link rel="prefetch" href="/assets/js/30.356525db.js"><link rel="prefetch" href="/assets/js/31.b9ad12f5.js"><link rel="prefetch" href="/assets/js/32.bc18723d.js"><link rel="prefetch" href="/assets/js/33.395c2652.js"><link rel="prefetch" href="/assets/js/34.dc6f2133.js"><link rel="prefetch" href="/assets/js/35.cff13afc.js"><link rel="prefetch" href="/assets/js/36.e1ccc63a.js"><link rel="prefetch" href="/assets/js/37.87a3a50b.js"><link rel="prefetch" href="/assets/js/38.20975580.js"><link rel="prefetch" href="/assets/js/39.fe1ec382.js"><link rel="prefetch" href="/assets/js/40.0fa937cf.js"><link rel="prefetch" href="/assets/js/41.1dfcb875.js"><link rel="prefetch" href="/assets/js/42.f3ddae5b.js"><link rel="prefetch" href="/assets/js/43.c234813d.js"><link rel="prefetch" href="/assets/js/44.ee33685d.js"><link rel="prefetch" href="/assets/js/45.d7f97673.js">
+    <link rel="stylesheet" href="/assets/css/46.styles.b646c9c7.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div><a href="/" class="home-link router-link-active"><!----><span class="site-name">
+      霍梦林的个人博客
+    </span></a><div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""><!----></div><nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">Home</a></div><div class="nav-item"><a href="/problem/" class="nav-link">Problem</a></div><div class="nav-item"><a href="/study/" class="nav-link router-link-active">Study</a></div><div class="nav-item"><a href="http://blog.csdn.net/weixin_38318244/" target="_blank" rel="noopener noreferrer" class="nav-link">CSDN</a></div><div class="nav-item"><a href="https://github.com/momo-0902" target="_blank" rel="noopener noreferrer" class="nav-link">Github</a></div><!----></nav></div></header><div class="sidebar-mask"></div><div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">Home</a></div><div class="nav-item"><a href="/problem/" class="nav-link">Problem</a></div><div class="nav-item"><a href="/study/" class="nav-link router-link-active">Study</a></div><div class="nav-item"><a href="http://blog.csdn.net/weixin_38318244/" target="_blank" rel="noopener noreferrer" class="nav-link">CSDN</a></div><div class="nav-item"><a href="https://github.com/momo-0902" target="_blank" rel="noopener noreferrer" class="nav-link">Github</a></div><!----></nav><ul class="sidebar-links"><li><a href="/study/" class="sidebar-link">学习笔记</a></li><li><a href="/study/axios.html" class="sidebar-link">1.axios</a></li><li><a href="/study/document.html" class="sidebar-link">2.document</a></li><li><a href="/study/css.html" class="sidebar-link">3.css</a></li><li><a href="/study/css-selector.html" class="sidebar-link">4.css选择器</a></li><li><a href="/study/flex.html" class="sidebar-link">5.flex</a></li><li><a href="/study/git.html" class="sidebar-link">6.git</a></li><li><a href="/study/html.html" class="sidebar-link">7.html</a></li><li><a href="/study/http.html" class="sidebar-link">8.http</a></li><li><a href="/study/input.html" class="sidebar-link">9.input</a></li><li><a href="/study/js-basis.html" class="sidebar-link">10.js语言基础</a></li><li><a href="/study/RSA-encrypt.html" class="sidebar-link">12.RSA加密</a></li><li><a href="/study/vue-router.html" class="sidebar-link">13.vue-router</a></li><li><a href="/study/vue.html" class="active sidebar-link">14.vue</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/study/vue.html#vue如何使用disabled" class="sidebar-link">vue如何使用disabled</a></li><li class="sidebar-sub-header"><a href="/study/vue.html#mixins" class="sidebar-link">mixins</a></li><li class="sidebar-sub-header"><a href="/study/vue.html#vue-将选中项写入json备用" class="sidebar-link">vue 将选中项写入json备用</a></li></ul></li><li><a href="/study/vuex.html" class="sidebar-link">15.vuex</a></li><li><a href="/study/vuePress.html" class="sidebar-link">16.vuePress</a></li><li><a href="/study/zepto.html" class="sidebar-link">17.zepto</a></li><li><a href="/study/code-optimization.html" class="sidebar-link">18.代码逻辑优化</a></li><li><a href="/study/scroll-page-bottom.html" class="sidebar-link">19.判断是否滚动到页面底部</a></li><li><a href="/study/find-the-cause-of-error.html" class="sidebar-link">20.找错误原因</a></li><li><a href="/study/local-cache.html" class="sidebar-link">21.本地缓存</a></li><li><a href="/study/algorithm.html" class="sidebar-link">22.算法</a></li><li><a href="/study/vue-accordion.html" class="sidebar-link">23.vue使用事件委托实现手风琴</a></li><li><a href="/study/generator.html" class="sidebar-link">24.异步编程-generator</a></li><li><a href="/study/capture-debugging-tool.html" class="sidebar-link">25.抓包调试工具</a></li><li><a href="/study/art-template.html" class="sidebar-link">26.art-template</a></li><li><a href="/study/bootstrap-datepicker.html" class="sidebar-link">27.bootstrap-datepicker</a></li><li><a href="/study/simulation-form-submit.html" class="sidebar-link">28.模拟form提交表单</a></li><li><a href="/study/echarts.html" class="sidebar-link">29.echarts封装渲染和部分配置</a></li><li><a href="/study/return-specific-date.html" class="sidebar-link">30.返回某个月的某个星期几</a></li><li><a href="/study/prevent-duplicate-request.html" class="sidebar-link">31.防止接口重复请求</a></li><li><a href="/study/table.html" class="sidebar-link">32.table的操作</a></li><li><a href="/study/not-yet-classified.html" class="sidebar-link">33.暂未分类</a></li></ul></div><div class="page"><div class="content"><h2 id="vue如何使用disabled"><a href="#vue如何使用disabled" aria-hidden="true" class="header-anchor">#</a> vue如何使用disabled</h2><ul><li>给disabled设置一个逻辑值isDisabled，在data中设置isDisabled为true，此为不可用，当要改变状态时再设置isDisabled为false</li><li>disabled属性不要忘记加'：'</li><li>只有input标签才有disabled属性，disabled属性官方定义为input标签不可用属性</li></ul><pre class="language-text"><code>&lt;input :disabled=&quot;isDisabled&quot;&gt;
+</code></pre><h2 id="mixins"><a href="#mixins" aria-hidden="true" class="header-anchor">#</a> mixins</h2><p>mixins是一种公发vue组件中可复用功能的非常灵活的方式。混合对象可以包含任意组件选项。当组件使用混合对象时，所有混合对象的选项将被混入该组件本身的选项。
+mixins选项接受一个混合对象的数组。这些混合实例对象像正常的实例对象一样包含选项，它们将在Vue.extend()里最终选择使用相同的选项合并逻辑合并.</p><h4 id="这句话的意思是调用mixins对象后，组件内部的内容如data-created-mothods等与父组件合并。相当于在引入后，父组件的各种属性方法都被扩充了。而且会先执行mixins内的方法。如果父组件与混合对象内的内容键名冲突时，取组件对象的键值对。"><a href="#这句话的意思是调用mixins对象后，组件内部的内容如data-created-mothods等与父组件合并。相当于在引入后，父组件的各种属性方法都被扩充了。而且会先执行mixins内的方法。如果父组件与混合对象内的内容键名冲突时，取组件对象的键值对。" aria-hidden="true" class="header-anchor">#</a> 这句话的意思是调用mixins对象后，组件内部的内容如data,created,mothods等与父组件合并。相当于在引入后，父组件的各种属性方法都被扩充了。而且会先执行mixins内的方法。如果父组件与混合对象内的内容键名冲突时，取组件对象的键值对。</h4><pre class="language-text"><code>var addLog = {
+  created() {
+    console.log('mixins被执行了')
+  },
+  updated() {
+    console.log('数字增加到' + this.num)
+  },
+
+}
+export default create ({
+  data() {
+    return {
+      num
+    }
+  },
+  created() {
+    console.log('父组件方法被执行了')
+  },
+  methods: {
+    add() {
+      this.num += 1
+    }
+  }
+})
+// 结果： mixins被执行了
+          父组件方法被执行了
+          数字增加到1
+</code></pre><h2 id="vue-将选中项写入json备用"><a href="#vue-将选中项写入json备用" aria-hidden="true" class="header-anchor">#</a> vue 将选中项写入json备用</h2><pre class="language-text"><code> var peopleList = [
+        this.gender,
+        this.age,
+        this.marriage,
+        this.level,
+        this.education,
+        this.carrer,
+        this.house,
+        this.car,
+        this.hobby,
+        this.industry
+      ];
+      var nameList = [
+        &quot;性别&quot;,
+        &quot;婚姻情况&quot;,
+        &quot;年龄&quot;,
+        &quot;消费等级&quot;,
+        &quot;学历&quot;,
+        &quot;身份职业&quot;,
+        &quot;是否有房&quot;,
+        &quot;是否有车&quot;,
+        &quot;兴趣爱好&quot;,
+        &quot;行业&quot;
+      ];
+      // 将所选内容存入json中，后期遍历显示
+      for (let i = 0; i &lt; peopleList.length; i++) {
+        if (JSON.stringify(peopleList[i]) !== &quot;[]&quot;) {
+          this.peopleJson[nameList[i]] = peopleList[i];
+        }
+      }
+</code></pre></div><!----><div class="content page-nav"><p class="inner"><span class="prev">
+        ← <a href="/study/vue-router.html" class="prev">
+          13.vue-router
+        </a></span><span class="next"><a href="/study/vuex.html">
+          15.vuex
+        </a> →
+      </span></p></div></div></div></div>
+    <script src="/assets/js/3.ba3de1c7.js" defer></script><script src="/assets/js/app.21af4b7a.js" defer></script>
+  </body>
+</html>
